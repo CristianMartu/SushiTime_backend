@@ -22,15 +22,17 @@ public class Product {
     private String name;
     private String description;
     private double price;
+    private String image;
 
     @ManyToOne
     @JoinColumn(name = "category_id")
     private Category category;
 
-    public Product(String name, String description, double price, Category category) {
+    public Product(String name, String description, double price, String image, Category category) {
         this.name = name;
         this.description = description;
         this.price = price;
+        this.image = image;
         this.category = category;
     }
 }
