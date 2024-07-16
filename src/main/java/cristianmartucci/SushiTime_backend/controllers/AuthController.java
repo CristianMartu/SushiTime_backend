@@ -32,6 +32,7 @@ public class AuthController {
     }
 
     @PostMapping("/login")
+    @ResponseStatus(HttpStatus.CREATED)
     public UserLoginResponseDTO login(@RequestBody @Validated UserLoginDTO body, BindingResult bindingResult){
         if (bindingResult.hasErrors()) {
             System.out.println(bindingResult.getAllErrors());

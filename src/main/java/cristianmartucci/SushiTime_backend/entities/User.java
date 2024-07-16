@@ -1,5 +1,6 @@
 package cristianmartucci.SushiTime_backend.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import cristianmartucci.SushiTime_backend.enums.Role;
 import jakarta.persistence.*;
 import jakarta.persistence.Table;
@@ -21,6 +22,7 @@ import java.util.UUID;
 @Setter
 @NoArgsConstructor
 @ToString
+@JsonIgnoreProperties(value = { "password", "username", "authorities", "enabled", "accountNonExpired", "credentialsNonExpired", "accountNonLocked" })
 public class User implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -28,6 +30,7 @@ public class User implements UserDetails {
     private String name;
     private String email;
     private String password;
+    @Enumerated(value = EnumType.STRING)
     private Role role;
 
     public User(String name, String email, String password) {

@@ -3,10 +3,7 @@ package cristianmartucci.SushiTime_backend.entities;
 
 
 import cristianmartucci.SushiTime_backend.enums.TableState;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -25,6 +22,7 @@ public class Table {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
     private int number;
+    @Enumerated(value = EnumType.STRING)
     private TableState state;
 
     public Table(int number) {

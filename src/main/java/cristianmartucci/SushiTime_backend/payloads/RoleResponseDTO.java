@@ -1,4 +1,4 @@
-package cristianmartucci.SushiTime_backend.payloads.users;
+package cristianmartucci.SushiTime_backend.payloads;
 
 import jakarta.validation.constraints.NotEmpty;
 

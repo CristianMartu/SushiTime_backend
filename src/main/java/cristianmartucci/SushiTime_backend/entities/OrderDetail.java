@@ -22,6 +22,7 @@ public class OrderDetail {
     private UUID id;
     private int quantity;
     private double price;
+    @Enumerated(value = EnumType.STRING)
     private OrderState state;
 
     @ManyToOne

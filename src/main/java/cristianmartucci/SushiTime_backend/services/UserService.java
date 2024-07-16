@@ -5,7 +5,7 @@ import cristianmartucci.SushiTime_backend.enums.Role;
 import cristianmartucci.SushiTime_backend.exceptions.BadRequestException;
 import cristianmartucci.SushiTime_backend.exceptions.NotFoundException;
 import cristianmartucci.SushiTime_backend.payloads.users.NewUserDTO;
-import cristianmartucci.SushiTime_backend.payloads.users.RoleResponseDTO;
+import cristianmartucci.SushiTime_backend.payloads.RoleResponseDTO;
 import cristianmartucci.SushiTime_backend.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -56,7 +56,7 @@ public class UserService {
         try {
             return Role.valueOf(role.toUpperCase());
         }catch (IllegalArgumentException error){
-            throw new BadRequestException("Ruolo inserito non corretto!\n   Ruoli disponibili: USER, ADMIN, STAFF");
+            throw new BadRequestException("Ruolo inserito non corretto! Ruoli disponibili: USER, ADMIN, STAFF");
         }
     }
 }

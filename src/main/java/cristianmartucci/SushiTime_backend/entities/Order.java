@@ -23,6 +23,7 @@ public class Order {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
     private LocalDateTime date;
+    @Enumerated(value = EnumType.STRING)
     private OrderState state;
 
     @ManyToOne
