@@ -3,14 +3,10 @@ package cristianmartucci.SushiTime_backend.payloads.users;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
 
-public record NewUserDTO(
-        @NotEmpty(message = "Nome obbligatorio")
+public record UpdateUserDTO(
         String name,
-        @NotEmpty(message = "Cognome obbligatorio")
         String surname,
-        @NotEmpty(message = "Email obbligatorio")
         @Email(message = "Formato email non valido")
         String email,
-        @NotEmpty(message = "Password obbligatorio")
         String password) {
 }

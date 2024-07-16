@@ -6,6 +6,7 @@ import cristianmartucci.SushiTime_backend.exceptions.BadRequestException;
 import cristianmartucci.SushiTime_backend.exceptions.NotFoundException;
 import cristianmartucci.SushiTime_backend.payloads.users.NewUserDTO;
 import cristianmartucci.SushiTime_backend.payloads.RoleResponseDTO;
+import cristianmartucci.SushiTime_backend.payloads.users.UpdateUserDTO;
 import cristianmartucci.SushiTime_backend.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -33,10 +34,10 @@ public class UserService {
     }
 
     public User save(NewUserDTO body){
-        if (this.userRepository.findByEmailOrName(body.email(), body.name()).isPresent()){
-            throw new BadRequestException("Email o nome già in uso");
+        if (this.userRepository.findByEmail(body.email()).isPresent()){
+            throw new BadRequestException("Email già in uso");
         }
-        User user = new User(body.name(), body.email(), passwordEncoder.encode(body.password()));
+        User user = new User(body.name(), body.surname(), body.email(), this.passwordEncoder.encode(body.password()));
         return this.userRepository.save(user);
     }
 
@@ -50,6 +51,21 @@ public class UserService {
         User user = this.findById(id);
         user.setRole(stringToRole(body.role()));
         return this.userRepository.save(user);
+    }
+
+    public User updateUser(User user, UpdateUserDTO body){
+        if (this.userRepository.findByEmail(body.email()).isPresent()){
+            throw new BadRequestException("Email già in uso");
+        }
+        if (body.name() != null) user.setName(body.name());
+        if (body.surname() != null) user.setSurname(body.surname());
+        if (body.email() != null) user.setEmail(body.email());
+        if (body.password() != null) user.setPassword(this.passwordEncoder.encode(body.password()));
+        return this.userRepository.save(user);
+    }
+
+    public void delete(User user){
+        this.userRepository.delete(user);
     }
 
     private static Role stringToRole(String role){
