@@ -7,6 +7,10 @@ public class NotFoundException extends RuntimeException {
         super("Record con id " + id + " non trovato!");
     }
 
+    public NotFoundException(long id) {
+        super("Record con id " + id + " non trovato!");
+    }
+
     public NotFoundException(String message) {
         super(message);
     }

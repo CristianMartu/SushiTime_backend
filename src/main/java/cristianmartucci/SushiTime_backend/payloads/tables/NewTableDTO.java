@@ -1,8 +1,11 @@
 package cristianmartucci.SushiTime_backend.payloads.tables;
 
+import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 
 public record NewTableDTO(
-        @NotNull(message = "Numero di persone obbligatorio")
-        int number) {
+        @NotNull(message = "Numero tavolo obbligatorio")
+        Integer number,
+        @NotNull(message = "Numero massimo di persone obbligatorio")
+        Integer maxCapacity){
 }

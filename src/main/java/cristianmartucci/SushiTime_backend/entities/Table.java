@@ -22,11 +22,17 @@ public class Table {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
     private int number;
+    @Column(name = "max_capacity")
+    private int maxCapacity;
+    @Column(name = "current_people")
+    private int currentPeople;
     @Enumerated(value = EnumType.STRING)
     private TableState state;
 
-    public Table(int number) {
+    public Table(int number, int maxCapacity) {
         this.number = number;
+        this.maxCapacity = maxCapacity;
+        //this.currentPeople = 0;
         this.state = TableState.AVAILABLE;
     }
 }

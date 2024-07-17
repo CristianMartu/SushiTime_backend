@@ -4,7 +4,8 @@ import cristianmartucci.SushiTime_backend.entities.Table;
 import cristianmartucci.SushiTime_backend.exceptions.BadRequestException;
 import cristianmartucci.SushiTime_backend.payloads.tables.NewTableDTO;
 import cristianmartucci.SushiTime_backend.payloads.tables.NewTableResponseDTO;
-import cristianmartucci.SushiTime_backend.payloads.tables.NewTableStateResponseDTO;
+import cristianmartucci.SushiTime_backend.payloads.tables.TableStateResponseDTO;
+import cristianmartucci.SushiTime_backend.payloads.tables.UpdateTableDTO;
 import cristianmartucci.SushiTime_backend.services.TableService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -35,7 +36,7 @@ public class TableController {
 
     @PatchMapping("/{tableId}/state")
     @PreAuthorize("hasAnyAuthority('ADMIN', 'STAFF')")
-    public Table changeState(@PathVariable UUID tableId , @RequestBody @Validated NewTableStateResponseDTO body, BindingResult bindingResult){
+    public Table changeState(@PathVariable UUID tableId , @RequestBody @Validated TableStateResponseDTO body, BindingResult bindingResult){
         if (bindingResult.hasErrors()){
             System.out.println(bindingResult.getAllErrors());
             throw new BadRequestException(bindingResult.getAllErrors());
@@ -45,13 +46,13 @@ public class TableController {
 
     @GetMapping
     @PreAuthorize("hasAnyAuthority('ADMIN', 'STAFF')")
-    public Page<Table> getAll(@RequestParam(defaultValue = "0") int page, @RequestParam(defaultValue = "10") int size, @RequestParam(defaultValue = "state") String sortBy){
+    public Page<Table> getAll(@RequestParam(defaultValue = "0") int page, @RequestParam(defaultValue = "10") int size, @RequestParam(defaultValue = "number") String sortBy){
         return this.tableService.getAll(page, size, sortBy);
     }
 
     @PatchMapping("/{tableId}/number")
     @PreAuthorize("hasAnyAuthority('ADMIN', 'STAFF')")
-    public Table updateNumber(@PathVariable UUID tableId, @RequestBody @Validated NewTableDTO body, BindingResult bindingResult){
+    public Table updateNumber(@PathVariable UUID tableId, @RequestBody @Validated UpdateTableDTO body, BindingResult bindingResult){
         if (bindingResult.hasErrors()){
             System.out.println(bindingResult.getAllErrors());
             throw new BadRequestException(bindingResult.getAllErrors());

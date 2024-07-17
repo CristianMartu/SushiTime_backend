@@ -1,13 +1,12 @@
 package cristianmartucci.SushiTime_backend.services;
 
 import cristianmartucci.SushiTime_backend.entities.Table;
-import cristianmartucci.SushiTime_backend.entities.User;
-import cristianmartucci.SushiTime_backend.enums.Role;
 import cristianmartucci.SushiTime_backend.enums.TableState;
 import cristianmartucci.SushiTime_backend.exceptions.BadRequestException;
 import cristianmartucci.SushiTime_backend.exceptions.NotFoundException;
 import cristianmartucci.SushiTime_backend.payloads.tables.NewTableDTO;
-import cristianmartucci.SushiTime_backend.payloads.tables.NewTableStateResponseDTO;
+import cristianmartucci.SushiTime_backend.payloads.tables.TableStateResponseDTO;
+import cristianmartucci.SushiTime_backend.payloads.tables.UpdateTableDTO;
 import cristianmartucci.SushiTime_backend.repositories.TableRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -24,7 +23,10 @@ public class TableService {
     private TableRepository tableRepository;
 
     public Table save(NewTableDTO body){
-        Table table = new Table(body.number());
+        if (this.tableRepository.findByNumber(body.number()).isPresent()){
+            throw new BadRequestException("Numero tavolo già presente");
+        }
+        Table table = new Table(body.number(), body.maxCapacity());
         return tableRepository.save(table);
     }
 
@@ -34,19 +36,26 @@ public class TableService {
         return this.tableRepository.findAll(pageable);
     }
 
-    public Table findById(UUID utenteId) {
-        return this.tableRepository.findById(utenteId).orElseThrow(() -> new NotFoundException(utenteId));
+    public Table findById(UUID id) {
+        return this.tableRepository.findById(id).orElseThrow(() -> new NotFoundException(id));
     }
 
-    public Table changeState(UUID id, NewTableStateResponseDTO body){
+    public Table changeState(UUID id, TableStateResponseDTO body){
         Table table = this.findById(id);
         table.setState(stringToState(body.state()));
         return this.tableRepository.save(table);
     }
 
-    public Table updateNumber(UUID id, NewTableDTO body){
+    public Table updateNumber(UUID id, UpdateTableDTO body){
         Table table = this.findById(id);
-        table.setNumber(body.number());
+        if (body.number() != null) table.setNumber(body.number());
+        if (body.maxCapacity() != null) table.setMaxCapacity(body.maxCapacity());
+        if (body.currentPeople() != null) {
+            if (body.currentPeople() > table.getMaxCapacity()){
+                throw new BadRequestException("Il tavolo può avere al massimo " + table.getMaxCapacity() + " persone");
+            }
+            table.setCurrentPeople(body.currentPeople());
+        }
         return this.tableRepository.save(table);
     }
 
@@ -58,7 +67,7 @@ public class TableService {
         try {
             return TableState.valueOf(state.toUpperCase());
         } catch(IllegalArgumentException error){
-            throw new BadRequestException("Stato inserito non corretto! Stati disponibili: AVAILABLE, BUSY");
+            throw new BadRequestException("Stato inserito non corretto! Stati disponibili: OCCUPIED, AVAILABLE, RESERVED, OUT_OF_SERVICE");
         }
     }
 }

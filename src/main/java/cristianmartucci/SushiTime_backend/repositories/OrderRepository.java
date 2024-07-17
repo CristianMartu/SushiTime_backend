@@ -1,14 +1,11 @@
 package cristianmartucci.SushiTime_backend.repositories;
 
-import cristianmartucci.SushiTime_backend.entities.Table;
+import cristianmartucci.SushiTime_backend.entities.Order;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.Optional;
 import java.util.UUID;
 
-
 @Repository
-public interface TableRepository extends JpaRepository<Table, UUID> {
-    Optional<Table> findByNumber(int number);
+public interface OrderRepository extends JpaRepository<Order, UUID> {
 }

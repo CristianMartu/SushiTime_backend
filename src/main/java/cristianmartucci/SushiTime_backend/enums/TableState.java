@@ -1,5 +1,5 @@
 package cristianmartucci.SushiTime_backend.enums;
 
 public enum TableState {
-    AVAILABLE, BUSY
+    OCCUPIED, AVAILABLE, RESERVED, OUT_OF_SERVICE
 }

@@ -33,9 +33,9 @@ public class Order {
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
     private List<OrderDetail> orderDetails;
 
-    public Order(LocalDateTime date, cristianmartucci.SushiTime_backend.entities.Table table) {
-        this.date = date;
+    public Order(cristianmartucci.SushiTime_backend.entities.Table table) {
         this.table = table;
+        this.date = LocalDateTime.now();
         this.state = OrderState.IN_PROGRESS;
     }
 }
