@@ -4,6 +4,7 @@ import cristianmartucci.SushiTime_backend.entities.Order;
 import cristianmartucci.SushiTime_backend.entities.Table;
 import cristianmartucci.SushiTime_backend.exceptions.BadRequestException;
 import cristianmartucci.SushiTime_backend.payloads.orders.NewOrderDTO;
+import cristianmartucci.SushiTime_backend.payloads.orders.NewOrderResponseDTO;
 import cristianmartucci.SushiTime_backend.payloads.orders.OrderStateResponseDTO;
 import cristianmartucci.SushiTime_backend.services.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,12 +26,12 @@ public class OrderController {
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     @PreAuthorize("hasAnyAuthority('ADMIN', 'STAFF')")
-    public Order save(@RequestBody @Validated NewOrderDTO body, BindingResult bindingResult){
+    public NewOrderResponseDTO save(@RequestBody @Validated NewOrderDTO body, BindingResult bindingResult){
         if (bindingResult.hasErrors()){
             System.out.println(bindingResult.getAllErrors());
             throw new BadRequestException(bindingResult.getAllErrors());
         }
-        return this.orderService.save(body);
+        return new NewOrderResponseDTO(this.orderService.save(body).getId());
     }
 
     @GetMapping

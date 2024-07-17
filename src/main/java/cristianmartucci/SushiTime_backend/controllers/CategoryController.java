@@ -4,6 +4,7 @@ import cristianmartucci.SushiTime_backend.entities.Category;
 import cristianmartucci.SushiTime_backend.entities.Table;
 import cristianmartucci.SushiTime_backend.exceptions.BadRequestException;
 import cristianmartucci.SushiTime_backend.payloads.categories.NewCategoryDTO;
+import cristianmartucci.SushiTime_backend.payloads.categories.NewCategoryResponseDTO;
 import cristianmartucci.SushiTime_backend.payloads.tables.NewTableDTO;
 import cristianmartucci.SushiTime_backend.services.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,12 +26,12 @@ public class CategoryController {
     @PostMapping
     @PreAuthorize("hasAnyAuthority('ADMIN', 'STAFF')")
     @ResponseStatus(HttpStatus.CREATED)
-    public Category save(@RequestBody @Validated NewCategoryDTO body, BindingResult bindingResult){
+    public NewCategoryResponseDTO save(@RequestBody @Validated NewCategoryDTO body, BindingResult bindingResult){
         if (bindingResult.hasErrors()){
             System.out.println(bindingResult.getAllErrors());
             throw new BadRequestException(bindingResult.getAllErrors());
         }
-        return this.categoryService.save(body);
+        return new NewCategoryResponseDTO(this.categoryService.save(body).getId());
     }
 
     @GetMapping

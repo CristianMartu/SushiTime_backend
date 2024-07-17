@@ -32,7 +32,7 @@ public class Table {
     public Table(int number, int maxCapacity) {
         this.number = number;
         this.maxCapacity = maxCapacity;
-        //this.currentPeople = 0;
+        this.currentPeople = maxCapacity;
         this.state = TableState.AVAILABLE;
     }
 }

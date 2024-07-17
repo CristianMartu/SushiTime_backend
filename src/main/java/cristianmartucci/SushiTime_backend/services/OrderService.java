@@ -3,6 +3,7 @@ package cristianmartucci.SushiTime_backend.services;
 import cristianmartucci.SushiTime_backend.entities.Order;
 import cristianmartucci.SushiTime_backend.entities.Table;
 import cristianmartucci.SushiTime_backend.enums.OrderState;
+import cristianmartucci.SushiTime_backend.enums.TableState;
 import cristianmartucci.SushiTime_backend.exceptions.BadRequestException;
 import cristianmartucci.SushiTime_backend.exceptions.NotFoundException;
 import cristianmartucci.SushiTime_backend.payloads.orders.NewOrderDTO;
@@ -30,6 +31,11 @@ public class OrderService {
 
     public Order save(NewOrderDTO body){
         Table table = this.tableService.findById(body.tableId());
+        if (table.getState() == TableState.AVAILABLE){
+            table.setState(TableState.OCCUPIED);
+        }else{
+            throw new BadRequestException("Tavolo non disponibile, stato attuale: " + table.getState());
+        }
         Order order = new Order(table);
         return this.orderRepository.save(order);
     }
