@@ -30,10 +30,10 @@ public class OrderService {
     }
 
     public Order save(NewOrderDTO body){
-        Table table = this.tableService.findById(body.tableId());
+        Table table = this.tableService.findById(UUID.fromString(body.tableId()));
         if (table.getState() == TableState.AVAILABLE){
             table.setState(TableState.OCCUPIED);
-        }else{
+        } else {
             throw new BadRequestException("Tavolo non disponibile, stato attuale: " + table.getState());
         }
         Order order = new Order(table);
@@ -52,7 +52,14 @@ public class OrderService {
 
     public Order changeState(UUID id, OrderStateResponseDTO body){
         Order order = this.findById(id);
-        order.setState(stringToState(body.state()));
+        OrderState newState = stringToState(body.state());
+        order.setState(newState);
+        Table table = order.getTable();
+        if (newState.equals(OrderState.PAID) || newState.equals(OrderState.CANCELED)){
+            table.setState(TableState.AVAILABLE);
+        }else{
+            table.setState(TableState.OCCUPIED);
+        }
         return this.orderRepository.save(order);
     }
 
@@ -64,7 +71,7 @@ public class OrderService {
         try {
             return OrderState.valueOf(state.toUpperCase());
         } catch(IllegalArgumentException error){
-            throw new BadRequestException("Stato inserito non corretto! Stati disponibili: IN_PROGRESS, SERVED, CANCELED");
+            throw new BadRequestException("Stato inserito non corretto! Stati disponibili: IN_PROGRESS, PAID, CANCELED");
         }
     }
 }

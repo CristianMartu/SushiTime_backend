@@ -23,11 +23,15 @@ public class CategoryService {
         return this.categoryRepository.findById(id).orElseThrow(() -> new NotFoundException(id));
     }
 
+    public Category findByName(String name){
+        return this.categoryRepository.findByName(name.toUpperCase()).orElseThrow(() -> new NotFoundException("Categoria " + name.toUpperCase() + " non esistente"));
+    }
+
     public Category save(NewCategoryDTO body){
         if (this.categoryRepository.findByName(body.name()).isPresent()){
             throw new BadRequestException("Nome categoria già esistente");
         }
-        Category category = new Category(body.name());
+        Category category = new Category(body.name().toUpperCase());
         return this.categoryRepository.save(category);
     }
 
@@ -38,11 +42,11 @@ public class CategoryService {
     }
 
     public Category update(UUID id, NewCategoryDTO body){
+        Category category = this.findById(id);
         if (this.categoryRepository.findByName(body.name()).isPresent()){
             throw new BadRequestException("Nome categoria già esistente");
         }
-        Category category = this.findById(id);
-        category.setName(body.name());
+        category.setName(body.name().toUpperCase());
         return this.categoryRepository.save(category);
     }
 

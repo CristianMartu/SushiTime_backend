@@ -48,7 +48,12 @@ public class TableService {
 
     public Table updateNumber(UUID id, UpdateTableDTO body){
         Table table = this.findById(id);
-        if (body.number() != null) table.setNumber(body.number());
+        if (body.number() != null){
+            if (this.tableRepository.findByNumber(body.number()).isPresent()){
+                throw new BadRequestException("Numero tavolo già presente");
+            }
+            table.setNumber(body.number());
+        }
         if (body.maxCapacity() != null) table.setMaxCapacity(body.maxCapacity());
         if (body.currentPeople() != null) {
             if (body.currentPeople() > table.getMaxCapacity()){

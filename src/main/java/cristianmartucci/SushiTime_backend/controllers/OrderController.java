@@ -1,7 +1,6 @@
 package cristianmartucci.SushiTime_backend.controllers;
 
 import cristianmartucci.SushiTime_backend.entities.Order;
-import cristianmartucci.SushiTime_backend.entities.Table;
 import cristianmartucci.SushiTime_backend.exceptions.BadRequestException;
 import cristianmartucci.SushiTime_backend.payloads.orders.NewOrderDTO;
 import cristianmartucci.SushiTime_backend.payloads.orders.NewOrderResponseDTO;
@@ -46,7 +45,7 @@ public class OrderController {
         return this.orderService.getOrder(orderId);
     }
 
-    @PatchMapping("/{orderId}/state")
+    @PutMapping("/{orderId}/state")
     @PreAuthorize("hasAnyAuthority('ADMIN', 'STAFF')")
     public Order changeState(@PathVariable UUID orderId, @RequestBody @Validated OrderStateResponseDTO body, BindingResult bindingResult){
         if (bindingResult.hasErrors()){
