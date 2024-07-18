@@ -4,7 +4,6 @@ import cristianmartucci.SushiTime_backend.entities.Category;
 import cristianmartucci.SushiTime_backend.entities.Product;
 import cristianmartucci.SushiTime_backend.exceptions.BadRequestException;
 import cristianmartucci.SushiTime_backend.exceptions.NotFoundException;
-import cristianmartucci.SushiTime_backend.payloads.categories.NewCategoryDTO;
 import cristianmartucci.SushiTime_backend.payloads.product.NewProductDTO;
 import cristianmartucci.SushiTime_backend.payloads.product.UpdateProductDTO;
 import cristianmartucci.SushiTime_backend.repositories.ProductRepository;
@@ -46,19 +45,30 @@ public class ProductService {
         return this.productRepository.findAll(pageable);
     }
 
-//    public Product update(UUID id, UpdateProductDTO body){
-//        Product product = this.findById(id);
-//        if (body.name() != null){
-//            if (this.productRepository.findByName(body.name()).isPresent()){
-//                throw new BadRequestException("Nome già presente");
-//            }
-//            product.setName(body.name());
-//        }
-//        if (body.description() != null) product.setDescription(body.description());
-//        if (body.price() != null) product.setPrice(body.price());
-//        if (body.price() != null) product.setPrice(body.price());
-//        if (body.category() != null) {
-//            this.categoryService.findByName(body.category().toUpperCase());
-//        }
-//    }
+    public Product update(UUID id, UpdateProductDTO body){
+        Product product = this.findById(id);
+        if (body.name() != null){
+            if (this.productRepository.findByName(body.name()).isPresent()){
+                throw new BadRequestException("Nome già presente");
+            }
+            product.setName(body.name());
+        }
+        if (body.description() != null) product.setDescription(body.description());
+        if (body.price() != null) product.setPrice(body.price());
+        if (body.image() != null) {
+            if (this.productRepository.findByImage(body.image()).isPresent()){
+                throw new BadRequestException("Immagine già presente");
+            }
+            product.setImage(body.image());
+        }
+        if (body.category() != null) {
+             Category category = this.categoryService.findByName(body.category().toUpperCase());
+             product.setCategory(category);
+        }
+        return this.productRepository.save(product);
+    }
+
+    public void delete(UUID id){
+        this.productRepository.delete(this.findById(id));
+    }
 }

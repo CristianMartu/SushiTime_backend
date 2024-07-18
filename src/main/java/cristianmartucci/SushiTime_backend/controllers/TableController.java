@@ -62,6 +62,7 @@ public class TableController {
 
     @DeleteMapping("/{tableId}")
     @PreAuthorize("hasAnyAuthority('ADMIN', 'STAFF')")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public void delete(@PathVariable UUID tableId){
         this.tableService.delete(tableId);
     }
