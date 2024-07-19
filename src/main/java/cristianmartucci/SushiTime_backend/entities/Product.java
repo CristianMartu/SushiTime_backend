@@ -23,16 +23,18 @@ public class Product {
     private String description;
     private double price;
     private String image;
+    protected int number;
 
     @ManyToOne
     @JoinColumn(name = "category_id")
     private Category category;
 
-    public Product(String name, String description, double price, String image, Category category) {
+    public Product(String name, String description, double price, String image, int number, Category category) {
         this.name = name;
         this.description = description;
         this.price = price;
         this.image = image;
+        this.number = number;
         this.category = category;
     }
 }

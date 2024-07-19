@@ -5,5 +5,6 @@ public record UpdateProductDTO(
         String description,
         Double price,
         String image,
+        Integer number,
         String category) {
 }

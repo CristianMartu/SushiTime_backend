@@ -32,10 +32,13 @@ public class ProductService {
     }
 
     public Product save(NewProductDTO body){
+        if (this.productRepository.findByNumber(body.number()).isPresent()){
+            throw new BadRequestException("Prodotto numero " + body.number() + " già presente");
+        }
         if (this.productRepository.findByNameAndCategoryOrImage(body.name(), body.category(), body.image()).isPresent()){
             throw new BadRequestException("Prodotto già presente");
         }
-        Product product = new Product(body.name().toUpperCase(), body.description(), body.price(), body.image(), this.categoryService.findByName(body.category().toUpperCase()));
+        Product product = new Product(body.name().toUpperCase(), body.description(), body.price(), body.image(), body.number(), this.categoryService.findByName(body.category().toUpperCase()));
         return this.productRepository.save(product);
     }
 
@@ -47,6 +50,12 @@ public class ProductService {
 
     public Product update(UUID id, UpdateProductDTO body){
         Product product = this.findById(id);
+        if (body.number() != null) {
+            if (this.productRepository.findByNumber(body.number()).isPresent()){
+                throw new BadRequestException("Prodotto numero " + body.number() + " già presente");
+            }
+            product.setNumber(body.number());
+        }
         if (body.category() != null) {
             Category category = this.categoryService.findByName(body.category().toUpperCase());
             product.setCategory(category);

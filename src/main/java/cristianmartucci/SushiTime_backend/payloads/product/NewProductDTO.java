@@ -10,6 +10,8 @@ public record NewProductDTO(
         String description,
         @NotNull(message = "Prezzo obbligatorio")
         Double price,
+        @NotNull(message = "Numero obbligatorio")
+        Integer number,
         @NotEmpty(message = "Image obbligatorio")
         String image,
         @NotEmpty(message = "Nome categoria obbligatorio")
