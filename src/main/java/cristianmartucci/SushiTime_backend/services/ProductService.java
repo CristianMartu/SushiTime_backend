@@ -28,14 +28,14 @@ public class ProductService {
     }
 
     public Product findByName(String name){
-        return this.productRepository.findByName(name).orElseThrow(() -> new NotFoundException("Prodotto " + name + " non trovato"));
+        return this.productRepository.findByName(name.toUpperCase()).orElseThrow(() -> new NotFoundException("Prodotto " + name + " non trovato"));
     }
 
     public Product save(NewProductDTO body){
-        if (this.productRepository.findByNameOrImage(body.name(), body.image()).isPresent()){
+        if (this.productRepository.findByNameOrImage(body.name().toUpperCase(), body.image()).isPresent()){
             throw new BadRequestException("Prodotto già presente");
         }
-        Product product = new Product(body.name(), body.description(), body.price(), body.image(), this.categoryService.findByName(body.category().toUpperCase()));
+        Product product = new Product(body.name().toUpperCase(), body.description(), body.price(), body.image(), this.categoryService.findByName(body.category().toUpperCase()));
         return this.productRepository.save(product);
     }
 
@@ -48,10 +48,10 @@ public class ProductService {
     public Product update(UUID id, UpdateProductDTO body){
         Product product = this.findById(id);
         if (body.name() != null){
-            if (this.productRepository.findByName(body.name()).isPresent()){
+            if (this.productRepository.findByName(body.name().toUpperCase()).isPresent()){
                 throw new BadRequestException("Nome già presente");
             }
-            product.setName(body.name());
+            product.setName(body.name().toUpperCase());
         }
         if (body.description() != null) product.setDescription(body.description());
         if (body.price() != null) product.setPrice(body.price());
