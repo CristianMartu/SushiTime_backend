@@ -32,7 +32,7 @@ public class ProductService {
     }
 
     public Product save(NewProductDTO body){
-        if (this.productRepository.findByNameOrImage(body.name().toUpperCase(), body.image()).isPresent()){
+        if (this.productRepository.findByNameAndCategoryOrImage(body.name(), body.category(), body.image()).isPresent()){
             throw new BadRequestException("Prodotto già presente");
         }
         Product product = new Product(body.name().toUpperCase(), body.description(), body.price(), body.image(), this.categoryService.findByName(body.category().toUpperCase()));
@@ -47,23 +47,23 @@ public class ProductService {
 
     public Product update(UUID id, UpdateProductDTO body){
         Product product = this.findById(id);
+        if (body.category() != null) {
+            Category category = this.categoryService.findByName(body.category().toUpperCase());
+            product.setCategory(category);
+        }
         if (body.name() != null){
-            if (this.productRepository.findByName(body.name().toUpperCase()).isPresent()){
-                throw new BadRequestException("Nome già presente");
+            if (this.productRepository.findByNameAndCategory(body.name().toUpperCase(), product.getCategory().getName().toUpperCase()).isPresent()){
+                throw new BadRequestException("Nome già presente nella categoria " + product.getCategory().getName());
             }
             product.setName(body.name().toUpperCase());
         }
         if (body.description() != null) product.setDescription(body.description());
         if (body.price() != null) product.setPrice(body.price());
         if (body.image() != null) {
-            if (this.productRepository.findByImage(body.image()).isPresent()){
+            if (this.productRepository.findByNameAndCategoryOrImage(product.getName(), product.getCategory().getName(), body.image()).isPresent()){
                 throw new BadRequestException("Immagine già presente");
             }
             product.setImage(body.image());
-        }
-        if (body.category() != null) {
-             Category category = this.categoryService.findByName(body.category().toUpperCase());
-             product.setCategory(category);
         }
         return this.productRepository.save(product);
     }

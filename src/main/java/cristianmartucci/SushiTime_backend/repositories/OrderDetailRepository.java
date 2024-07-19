@@ -12,5 +12,5 @@ import java.util.UUID;
 @Repository
 public interface OrderDetailRepository extends JpaRepository<OrderDetail, UUID> {
     @Query("SELECT o FROM OrderDetail o WHERE o.order.id = :orderId")
-    Page<OrderDetail> getAllDetailByOrder(UUID orderId, Pageable pageable);;
+    Page<OrderDetail> getAllDetailByOrder(UUID orderId, Pageable pageable);
 }

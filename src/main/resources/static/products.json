@@ -1,0 +1,355 @@
+{
+  "products": [
+    {
+      "name": "SHAKE",
+      "description": "Bocconcino di riso con fetta di salmone",
+      "price": 2,
+      "image": "image_url_1",
+      "category": {
+        "name": "NIGIRI"
+      }
+    },
+    {
+      "name": "EBI",
+      "description": "Bocconcino di riso con gambero cotto",
+      "price": 2,
+      "image": "image_url_2",
+      "category": {
+        "name": "NIGIRI"
+      }
+    },
+    {
+      "name": "MAGURO",
+      "description": "Bocconcino di riso con fetta di tonno rosso",
+      "price": 2,
+      "image": "image_url_3",
+      "category": {
+        "name": "NIGIRI"
+      }
+    },
+    {
+      "name": "ASPARAGO",
+      "description": "Bocconcino di riso con asparago cotto e salsa sushiko",
+      "price": 2,
+      "image": "image_url_4",
+      "category": {
+        "name": "NIGIRI"
+      }
+    },
+    {
+      "name": "SUZUKI",
+      "description": "Bocconcino di riso con branzino",
+      "price": 2,
+      "image": "image_url_5",
+      "category": {
+        "name": "NIGIRI"
+      }
+    },
+    {
+      "name": "TAKO",
+      "description": "Bocconcino di riso con polpo cotto e salsa teriyaki, sesamo tostato",
+      "price": 2,
+      "image": "image_url_6",
+      "category": {
+        "name": "NIGIRI"
+      }
+    },
+    {
+      "name": "UNAGI",
+      "description": "Bocconcino di riso con anguilla kabayaki, sesamo e salsa unagi",
+      "price": 2,
+      "image": "image_url_7",
+      "category": {
+        "name": "NIGIRI"
+      }
+    },
+    {
+      "name": "SHAKE FIRE",
+      "description": "Salmone scottato, salsa teriyaki, erba cipollina",
+      "price": 2,
+      "image": "image_url_8",
+      "category": {
+        "name": "NIGIRI"
+      }
+    },
+    {
+      "name": "MAGURO FIRE",
+      "description": "Bocconcino di riso, tonno scottato, salsa teriyaki, erba cipollina, sesamo",
+      "price": 2,
+      "image": "image_url_9",
+      "category": {
+        "name": "NIGIRI"
+      }
+    },
+    {
+      "name": "SHIROMI FIRE",
+      "description": "Bocconcino di riso, branzino scottato con fetta di limone, salsa teriyaki e sesamo",
+      "price": 2,
+      "image": "image_url_10",
+      "category": {
+        "name": "NIGIRI"
+      }
+    },
+    {
+      "name": "SHAKE CHEESE FIRE",
+      "description": "Bocconcino di riso, salmone scottato, formaggio, erba cipollina, spicy mayo, sesamo",
+      "price": 2,
+      "image": "image_url_11",
+      "category": {
+        "name": "NIGIRI"
+      }
+    },
+    {
+      "name": "SHAKE TROPICALE FLAMBÉ",
+      "description": "Bocconcino di riso, salmone scottato, salsa tropicale, nori croccante, salsa teriyaki, chips",
+      "price": 2,
+      "image": "image_url_12",
+      "category": {
+        "name": "NIGIRI"
+      }
+    },
+    {
+      "name": "SUZUKI FLAMBÉ",
+      "description": "Bocconcino di riso, branzino scottato con salsa sushiko",
+      "price": 2,
+      "image": "image_url_13",
+      "category": {
+        "name": "NIGIRI"
+      }
+    },
+    {
+      "name": "SPICY SHAKE FLAMBÉ",
+      "description": "Bocconcino di riso, salmone scottato, salsa spicy cream, erba cipollina, mandorle croccante, salsa teriyaki",
+      "price": 2,
+      "image": "image_url_14",
+      "category": {
+        "name": "NIGIRI"
+      }
+    },
+    {
+      "name": "SPICY MAGURO FLAMBÉ",
+      "description": "Bocconcino di riso, tonno scottato, salsa spicy cream, erba cipollina, mandorle croccanti, salsa teriyaki",
+      "price": 2,
+      "image": "image_url_15",
+      "category": {
+        "name": "NIGIRI"
+      }
+    },
+    {
+      "name": "EVERGREEN FLAMBÉ",
+      "description": "Bocconcino di riso, branzino scottato con salsa sushiko, nori croccante, chips",
+      "price": 2,
+      "image": "image_url_16",
+      "category": {
+        "name": "NIGIRI"
+      }
+    },
+    {
+      "name": "MAGURO AVOCADO",
+      "description": "Temaki con tonno, avocado, sesamo mix",
+      "price": 4,
+      "image": "image_url_17",
+      "category": {
+        "name": "TEMAKI"
+      }
+    },
+    {
+      "name": "SHAKE AVOCADO",
+      "description": "Temaki con salmone, avocado, sesamo mix",
+      "price": 4,
+      "image": "image_url_18",
+      "category": {
+        "name": "TEMAKI"
+      }
+    },
+    {
+      "name": "TUNA CETRIOLO",
+      "description": "Temaki con tonno cotto condito, cetriolo e sesamo mix",
+      "price": 4,
+      "image": "image_url_19",
+      "category": {
+        "name": "TEMAKI"
+      }
+    },
+    {
+      "name": "YASAI",
+      "description": "Temaki vegano, frutta, verdura di stagione",
+      "price": 4,
+      "image": "image_url_20",
+      "category": {
+        "name": "TEMAKI"
+      }
+    },
+    {
+      "name": "EBITEM",
+      "description": "Gamberone in tempura, insalata, salsa teriyaki",
+      "price": 4,
+      "image": "image_url_21",
+      "category": {
+        "name": "TEMAKI"
+      }
+    },
+    {
+      "name": "ROSA ANGEL",
+      "description": "Gambero in tempura, avocado, philadelphia e granella di patate, avvolto da sfoglia di soia",
+      "price": 4,
+      "image": "image_url_22",
+      "category": {
+        "name": "TEMAKI"
+      }
+    },
+    {
+      "name": "TORI",
+      "description": "Temaki con pollo croccante, salsa teriyaki, sesamo mix",
+      "price": 4,
+      "image": "image_url_23",
+      "category": {
+        "name": "TEMAKI"
+      }
+    },
+    {
+      "name": "BLACK ANGEL",
+      "description": "Riso venere, salmone, avocado, philadelphia, crema di rucola, avvolto da sfoglia di soia",
+      "price": 4,
+      "image": "image_url_24",
+      "category": {
+        "name": "TEMAKI"
+      }
+    },
+    {
+      "name": "SPICY SHAKE",
+      "description": "Salmone, spicy mayo, insalata, erba cipollina",
+      "price": 4,
+      "image": "image_url_25",
+      "category": {
+        "name": "TEMAKI"
+      }
+    },
+    {
+      "name": "CALIFORNIA",
+      "description": "Temaki california, gambero, uova di pesce volante, mayo, crema di avocado",
+      "price": 4,
+      "image": "image_url_26",
+      "category": {
+        "name": "TEMAKI"
+      }
+    },
+    {
+      "name": "SPICY SHAKE PLUS",
+      "description": "Temaki con salmone, salsa spicy cream, erba cipollina e chips",
+      "price": 4,
+      "image": "image_url_27",
+      "category": {
+        "name": "TEMAKI"
+      }
+    },
+    {
+      "name": "MISO SOUP",
+      "description": "Zuppa di miso",
+      "price": 4,
+      "image": "image_url_28",
+      "category": {
+        "name": "ENTRÉES"
+      }
+    },
+    {
+      "name": "WANTON SOUP",
+      "description": "Zuppa di miso con wanton fritti",
+      "price": 4,
+      "image": "image_url_29",
+      "category": {
+        "name": "ENTRÉES"
+      }
+    },
+    {
+      "name": "PANINO GUABAO",
+      "description": "Guabao cotto al vapore",
+      "price": 2,
+      "image": "image_url_30",
+      "category": {
+        "name": "ENTRÉES"
+      }
+    },
+    {
+      "name": "MANTOU FRITTO",
+      "description": "Panino giapponese fritto (2 pezzi)",
+      "price": 2,
+      "image": "image_url_31",
+      "category": {
+        "name": "ENTRÉES"
+      }
+    },
+    {
+      "name": "SPICY TORI SALAD",
+      "description": "Insalata mista con pollo fritto in crosta di mandorle e paprika, salsa per insalata",
+      "price": 3,
+      "image": "image_url_32",
+      "category": {
+        "name": "ENTRÉES"
+      }
+    },
+    {
+      "name": "KAISEN SALAD",
+      "description": "Insalata di mare",
+      "price": 3,
+      "image": "image_url_33",
+      "category": {
+        "name": "ENTRÉES"
+      }
+    },
+    {
+      "name": "EBI SALAD",
+      "description": "Insalata mista con gamberoni, salsa per insalata",
+      "price": 3,
+      "image": "image_url_34",
+      "category": {
+        "name": "ENTRÉES"
+      }
+    },
+    {
+      "name": "GOMA WAKAME",
+      "description": "Insalata di alghe giapponesi leggermente piccanti",
+      "price": 3,
+      "image": "image_url_35",
+      "category": {
+        "name": "ENTRÉES"
+      }
+    },
+    {
+      "name": "EDAMAME",
+      "description": "Fagioli di soia giapponesi bolliti",
+      "price": 3,
+      "image": "image_url_36",
+      "category": {
+        "name": "ENTRÉES"
+      }
+    },
+    {
+      "name": "RISO BIANCO",
+      "description": "Riso bianco con sesamo",
+      "price": 2,
+      "image": "image_url_37",
+      "category": {
+        "name": "ENTRÉES"
+      }
+    },
+    {
+      "name": "ZUPPA AGROPICCANTE",
+      "description": "Pollo, tofu, carote, bambù, funghi neri, uova",
+      "price": 4,
+      "image": "image_url_38",
+      "category": {
+        "name": "ENTRÉES"
+      }
+    },
+    {
+      "name": "CREAM BAO",
+      "description": "Pane alla crema (2 pezzi)",
+      "price": 2,
+      "image": "image_url_39",
+      "category": {
+        "name": "ENTRÉES"
+      }
+    }
+  ]
+}
