@@ -4,9 +4,7 @@ import cristianmartucci.SushiTime_backend.entities.Category;
 import cristianmartucci.SushiTime_backend.entities.Product;
 import cristianmartucci.SushiTime_backend.exceptions.BadRequestException;
 import cristianmartucci.SushiTime_backend.payloads.categories.NewCategoryDTO;
-import cristianmartucci.SushiTime_backend.payloads.product.NewProductDTO;
-import cristianmartucci.SushiTime_backend.payloads.product.NewProductResponseDTO;
-import cristianmartucci.SushiTime_backend.payloads.product.UpdateProductDTO;
+import cristianmartucci.SushiTime_backend.payloads.product.*;
 import cristianmartucci.SushiTime_backend.services.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -63,5 +61,25 @@ public class ProductController {
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void delete(@PathVariable UUID productId){
         this.productService.delete(productId);
+    }
+
+    @GetMapping("/product")
+    @PreAuthorize("hasAnyAuthority('ADMIN', 'STAFF')")
+    public Product getProductByName(@RequestBody @Validated ProductNameDTO body, BindingResult bindingResult){
+        if (bindingResult.hasErrors()){
+            System.out.println(bindingResult.getAllErrors());
+            throw new BadRequestException(bindingResult.getAllErrors());
+        }
+        return this.productService.findByName(body.name());
+    }
+
+    @GetMapping("/category")
+    @PreAuthorize("hasAnyAuthority('ADMIN', 'STAFF')")
+    public Page<Product> findByCategory(@RequestBody @Validated ProductCategoryDTO body, BindingResult bindingResult, @RequestParam(defaultValue = "0") int page, @RequestParam(defaultValue = "10") int size, @RequestParam(defaultValue = "category.name") String sortBy){
+        if (bindingResult.hasErrors()){
+            System.out.println(bindingResult.getAllErrors());
+            throw new BadRequestException(bindingResult.getAllErrors());
+        }
+        return this.productService.findByCategory(body, page, size, sortBy);
     }
 }

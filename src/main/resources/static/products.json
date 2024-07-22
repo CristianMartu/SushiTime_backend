@@ -4,7 +4,7 @@
       "name": "NIGIRI SHAKE",
       "description": "Bocconcino di riso con fetta di salmone",
       "price": 2,
-      "image": "image6",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1721653072/image6_uttitp.png",
       "number": 6,
       "category": {
         "name": "NIGIRI"
@@ -14,7 +14,7 @@
       "name": "NIGIRI EBI",
       "description": "Bocconcino di riso con gambero cotto",
       "price": 2,
-      "image": "image3",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1721653071/image3_l4daav.png",
       "number": 3,
       "category": {
         "name": "NIGIRI"
@@ -24,7 +24,7 @@
       "name": "NIGIRI MAGURO",
       "description": "Bocconcino di riso con fetta di tonno rosso",
       "price": 2,
-      "image": "image2",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1721653071/image2_ix7ruz.png",
       "number": 2,
       "category": {
         "name": "NIGIRI"
@@ -34,7 +34,7 @@
       "name": "NIGIRI ASPARAGO",
       "description": "Bocconcino di riso con asparago cotto e salsa sushiko",
       "price": 2,
-      "image": "image12",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1721654820/image12_fsqipu.png",
       "number": 12,
       "category": {
         "name": "NIGIRI"
@@ -44,7 +44,7 @@
       "name": "NIGIRI SUZUKI",
       "description": "Bocconcino di riso con branzino",
       "price": 2,
-      "image": "image7",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1721654818/image7_jps8rj.png",
       "number": 7,
       "category": {
         "name": "NIGIRI"
@@ -54,7 +54,7 @@
       "name": "NIGIRI TAKO",
       "description": "Bocconcino di riso con polpo cotto e salsa teriyaki, sesamo tostato",
       "price": 2,
-      "image": "image4",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1721653071/image4_c90lgc.png",
       "number": 4,
       "category": {
         "name": "NIGIRI"
@@ -64,7 +64,7 @@
       "name": "NIGIRI UNAGI",
       "description": "Bocconcino di riso con anguilla kabayaki, sesamo e salsa unagi",
       "price": 2,
-      "image": "image270",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1721654814/image270_nrh8ft.png",
       "number": 270,
       "category": {
         "name": "NIGIRI"
@@ -74,7 +74,7 @@
       "name": "NIGIRI SHAKE FIRE",
       "description": "Salmone scottato, salsa teriyaki, erba cipollina",
       "price": 2,
-      "image": "image10",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1721654816/image10_whdyxq.png",
       "number": 10,
       "category": {
         "name": "NIGIRI"
@@ -84,7 +84,7 @@
       "name": "NIGIRI MAGURO FIRE",
       "description": "Bocconcino di riso, tonno scottato, salsa teriyaki, erba cipollina, sesamo",
       "price": 2,
-      "image": "image11",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1721654908/image11_fx4ksn.png",
       "number": 11,
       "category": {
         "name": "NIGIRI"
@@ -94,7 +94,7 @@
       "name": "NIGIRI SHIROMI FIRE",
       "description": "Bocconcino di riso, branzino scottato con fetta di limone, salsa teriyaki e sesamo",
       "price": 2,
-      "image": "image9",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1721654906/image9_txchkj.png",
       "number": 9,
       "category": {
         "name": "NIGIRI"
@@ -104,7 +104,7 @@
       "name": "NIGIRI SHAKE CHEESE FIRE",
       "description": "Bocconcino di riso, salmone scottato, formaggio, erba cipollina, spicy mayo, sesamo",
       "price": 2,
-      "image": "image8",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1721654904/image8_w1fvvg.png",
       "number": 8,
       "category": {
         "name": "NIGIRI"
@@ -114,7 +114,7 @@
       "name": "NIGIRI SHAKE TROPICALE FLAMBÉ",
       "description": "Bocconcino di riso, salmone scottato, salsa tropicale, nori croccante, salsa teriyaki, chips",
       "price": 2,
-      "image": "image17",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1721655532/image17_qjd7rv.png",
       "number": 17,
       "category": {
         "name": "NIGIRI"
@@ -124,7 +124,7 @@
       "name": "NIGIRI SUZUKI FLAMBÉ",
       "description": "Bocconcino di riso, branzino scottato con salsa sushiko",
       "price": 2,
-      "image": "image15",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1721655528/image15_fci7mw.png",
       "number": 15,
       "category": {
         "name": "NIGIRI"
@@ -134,7 +134,7 @@
       "name": "NIGIRI SPICY SHAKE FLAMBÉ",
       "description": "Bocconcino di riso, salmone scottato, salsa spicy cream, erba cipollina, mandorle croccante, salsa teriyaki",
       "price": 2,
-      "image": "image13",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1721654910/image13_c0san1.png",
       "number": 13,
       "category": {
         "name": "NIGIRI"
@@ -144,7 +144,7 @@
       "name": "NIGIRI SPICY MAGURO FLAMBÉ",
       "description": "Bocconcino di riso, tonno scottato, salsa spicy cream, erba cipollina, mandorle croccanti, salsa teriyaki",
       "price": 2,
-      "image": "image14",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1721654912/image14_ywq5vo.png",
       "number": 14,
       "category": {
         "name": "NIGIRI"
@@ -154,7 +154,7 @@
       "name": "NIGIRI EVERGREEN FLAMBÉ",
       "description": "Bocconcino di riso, branzino scottato con salsa sushiko, nori croccante, chips",
       "price": 2,
-      "image": "image16",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1721655529/image16_enruxa.png",
       "number": 16,
       "category": {
         "name": "NIGIRI"
@@ -164,7 +164,7 @@
       "name": "TEMAKI MAGURO AVOCADO",
       "description": "Temaki con tonno, avocado, sesamo mix",
       "price": 4,
-      "image": "image18",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1721655533/image18_cyupej.png",
       "number": 18,
       "category": {
         "name": "TEMAKI"
@@ -174,7 +174,7 @@
       "name": "TEMAKI SHAKE AVOCADO",
       "description": "Temaki con salmone, avocado, sesamo mix",
       "price": 4,
-      "image": "image21",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1721655537/image21_j3xvgf.png",
       "number": 21,
       "category": {
         "name": "TEMAKI"
@@ -184,7 +184,7 @@
       "name": "TEMAKI TUNA CETRIOLO",
       "description": "Temaki con tonno cotto condito, cetriolo e sesamo mix",
       "price": 4,
-      "image": "image19",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1721655925/image19_vrryyu.png",
       "number": 19,
       "category": {
         "name": "TEMAKI"
@@ -194,7 +194,7 @@
       "name": "TEMAKI YASAI",
       "description": "Temaki vegano, frutta, verdura di stagione",
       "price": 4,
-      "image": "image20",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1721655925/image20_c7szr3.png",
       "number": 20,
       "category": {
         "name": "TEMAKI"
@@ -204,7 +204,7 @@
       "name": "TEMAKI EBITEM",
       "description": "Gamberone in tempura, insalata, salsa teriyaki",
       "price": 4,
-      "image": "image22",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1721655925/image22_rtwz1c.png",
       "number": 22,
       "category": {
         "name": "TEMAKI"
@@ -214,7 +214,7 @@
       "name": "TEMAKI ROSA ANGEL",
       "description": "Gambero in tempura, avocado, philadelphia e granella di patate, avvolto da sfoglia di soia",
       "price": 4,
-      "image": "image26",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1721656432/image26_v1ki0p.png",
       "number": 26,
       "category": {
         "name": "TEMAKI"
@@ -224,7 +224,7 @@
       "name": "TEMAKI TORI",
       "description": "Temaki con pollo croccante, salsa teriyaki, sesamo mix",
       "price": 4,
-      "image": "image25",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1721655925/image25_uarw66.png",
       "number": 25,
       "category": {
         "name": "TEMAKI"
@@ -234,7 +234,7 @@
       "name": "TEMAKI BLACK ANGEL",
       "description": "Riso venere, salmone, avocado, philadelphia, crema di rucola, avvolto da sfoglia di soia",
       "price": 4,
-      "image": "image27",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1721656432/image27_u0ey6l.png",
       "number": 27,
       "category": {
         "name": "TEMAKI"
@@ -244,7 +244,7 @@
       "name": "TEMAKI SPICY SHAKE",
       "description": "Salmone, spicy mayo, insalata, erba cipollina",
       "price": 4,
-      "image": "image24",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1721656432/image24_sdh2g9.png",
       "number": 24,
       "category": {
         "name": "TEMAKI"
@@ -254,7 +254,7 @@
       "name": "TEMAKI CALIFORNIA",
       "description": "Temaki california, gambero, uova di pesce volante, mayo, crema di avocado",
       "price": 4,
-      "image": "image92",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1721655925/image92_fuhf4v.png",
       "number": 92,
       "category": {
         "name": "TEMAKI"
@@ -264,7 +264,7 @@
       "name": "TEMAKI SPICY SHAKE PLUS",
       "description": "Temaki con salmone, salsa spicy cream, erba cipollina e chips",
       "price": 4,
-      "image": "image93",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1721656433/image93png_c9ce6n.png",
       "number": 93,
       "category": {
         "name": "TEMAKI"

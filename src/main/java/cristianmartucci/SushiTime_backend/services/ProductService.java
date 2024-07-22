@@ -5,6 +5,7 @@ import cristianmartucci.SushiTime_backend.entities.Product;
 import cristianmartucci.SushiTime_backend.exceptions.BadRequestException;
 import cristianmartucci.SushiTime_backend.exceptions.NotFoundException;
 import cristianmartucci.SushiTime_backend.payloads.product.NewProductDTO;
+import cristianmartucci.SushiTime_backend.payloads.product.ProductCategoryDTO;
 import cristianmartucci.SushiTime_backend.payloads.product.UpdateProductDTO;
 import cristianmartucci.SushiTime_backend.repositories.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -79,5 +80,11 @@ public class ProductService {
 
     public void delete(UUID id){
         this.productRepository.delete(this.findById(id));
+    }
+
+    public Page<Product> findByCategory(ProductCategoryDTO body, int pageNumber, int pageSize, String sortBy){
+        if (pageSize > 50) pageSize = 50;
+        Pageable pageable = PageRequest.of(pageNumber, pageSize, Sort.by(sortBy));
+        return this.productRepository.findByCategory(body.name().toUpperCase(), pageable);
     }
 }
