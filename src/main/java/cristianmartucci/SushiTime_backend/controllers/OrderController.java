@@ -1,7 +1,6 @@
 package cristianmartucci.SushiTime_backend.controllers;
 
 import cristianmartucci.SushiTime_backend.entities.Order;
-import cristianmartucci.SushiTime_backend.entities.OrderDetail;
 import cristianmartucci.SushiTime_backend.exceptions.BadRequestException;
 import cristianmartucci.SushiTime_backend.payloads.orders.NewOrderDTO;
 import cristianmartucci.SushiTime_backend.payloads.orders.NewOrderResponseDTO;

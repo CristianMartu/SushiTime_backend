@@ -1,9 +1,7 @@
 package cristianmartucci.SushiTime_backend.controllers;
 
-import cristianmartucci.SushiTime_backend.entities.Category;
 import cristianmartucci.SushiTime_backend.entities.Product;
 import cristianmartucci.SushiTime_backend.exceptions.BadRequestException;
-import cristianmartucci.SushiTime_backend.payloads.categories.NewCategoryDTO;
 import cristianmartucci.SushiTime_backend.payloads.product.*;
 import cristianmartucci.SushiTime_backend.services.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -63,7 +61,7 @@ public class ProductController {
         this.productService.delete(productId);
     }
 
-    @GetMapping("/product")
+    @PostMapping("/product")
     @PreAuthorize("hasAnyAuthority('ADMIN', 'STAFF')")
     public Product getProductByName(@RequestBody @Validated ProductNameDTO body, BindingResult bindingResult){
         if (bindingResult.hasErrors()){
@@ -73,7 +71,7 @@ public class ProductController {
         return this.productService.findByName(body.name());
     }
 
-    @GetMapping("/category")
+    @PostMapping("/category")
     @PreAuthorize("hasAnyAuthority('ADMIN', 'STAFF')")
     public Page<Product> findByCategory(@RequestBody @Validated ProductCategoryDTO body, BindingResult bindingResult, @RequestParam(defaultValue = "0") int page, @RequestParam(defaultValue = "10") int size, @RequestParam(defaultValue = "category.name") String sortBy){
         if (bindingResult.hasErrors()){
