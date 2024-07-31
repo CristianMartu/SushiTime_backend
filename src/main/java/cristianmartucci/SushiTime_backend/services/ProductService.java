@@ -32,6 +32,10 @@ public class ProductService {
         return this.productRepository.findByName(name.toUpperCase()).orElseThrow(() -> new NotFoundException("Prodotto " + name + " non trovato"));
     }
 
+    public Product findByNumber(int number){
+        return this.productRepository.findByNumber(number).orElseThrow(() -> new NotFoundException("Prodotto " + number + " non trovato"));
+    }
+
     public Product save(NewProductDTO body){
         if (this.productRepository.findByNumber(body.number()).isPresent()){
             throw new BadRequestException("Prodotto numero " + body.number() + " già presente");

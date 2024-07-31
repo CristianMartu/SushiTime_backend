@@ -6,8 +6,8 @@ import cristianmartucci.SushiTime_backend.exceptions.BadRequestException;
 import cristianmartucci.SushiTime_backend.payloads.orderDetails.NewOrderDetailDTO;
 import cristianmartucci.SushiTime_backend.payloads.orderDetails.NewOrderDetailResponseDTO;
 import cristianmartucci.SushiTime_backend.payloads.orderDetails.UpdateOrderDetailDTO;
-import cristianmartucci.SushiTime_backend.payloads.orders.OrderStateResponseDTO;
 import cristianmartucci.SushiTime_backend.services.OrderDetailsService;
+import cristianmartucci.SushiTime_backend.services.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
@@ -16,6 +16,10 @@ import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.Duration;
+import java.time.LocalDateTime;
+import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 @RestController
@@ -23,21 +27,39 @@ import java.util.UUID;
 public class OrderDetailController {
     @Autowired
     private OrderDetailsService orderDetailsService;
+    @Autowired
+    private OrderService orderService;
 
     @PostMapping("/{orderId}/details")
     @ResponseStatus(HttpStatus.CREATED)
     @PreAuthorize("hasAnyAuthority('ADMIN', 'STAFF')")
-    public NewOrderDetailResponseDTO save(@PathVariable UUID orderId, @RequestBody @Validated NewOrderDetailDTO body, BindingResult bindingResult){
+    public List<NewOrderDetailResponseDTO> save(@PathVariable UUID orderId, @RequestBody @Validated List<NewOrderDetailDTO> bodyList, BindingResult bindingResult){
         if (bindingResult.hasErrors()){
             System.out.println(bindingResult.getAllErrors());
             throw new BadRequestException(bindingResult.getAllErrors());
         }
-        return new NewOrderDetailResponseDTO(this.orderDetailsService.save(body, orderId).getId());
+        LocalDateTime time = LocalDateTime.now();
+        Order order = this.orderService.findById(orderId);
+        int maxProductPerPerson = 10;
+        int maxProductPerTable = order.getTable().getCurrentPeople() * maxProductPerPerson;
+        int tableProducts = bodyList.stream().mapToInt(NewOrderDetailDTO::quantity).sum();
+        Optional<OrderDetail> lastOrder = this.orderDetailsService.getAllByOrder(orderId, 0, 10, "orderTime").stream().findFirst();
+        if (lastOrder.isPresent()){
+            Duration duration = Duration.between(lastOrder.get().getOrderTime(), time);
+            // TODO ricordare di impostare il tempo a 10
+            if (duration.toMinutes() < 1){
+                throw new IllegalArgumentException("È necessario attendere 10 minuti tra un ordine e l'altro.");
+            }
+        }
+        if (tableProducts > maxProductPerTable){
+            throw new IllegalArgumentException("Non si possono ordinare più di " + maxProductPerTable + " prodotti per il numero corrente di persone.");
+        }
+        return bodyList.stream().map(body -> new NewOrderDetailResponseDTO(this.orderDetailsService.save(body, order, time).getId())).toList();
     }
 
     @GetMapping("{orderId}/details")
     @PreAuthorize("hasAnyAuthority('ADMIN', 'STAFF')")
-    public Page<OrderDetail> getAll(@PathVariable UUID orderId ,@RequestParam(defaultValue = "0") int page, @RequestParam(defaultValue = "10") int size, @RequestParam(defaultValue = "state") String sortBy){
+    public Page<OrderDetail> getAllByOrder(@PathVariable UUID orderId ,@RequestParam(defaultValue = "0") int page, @RequestParam(defaultValue = "10") int size, @RequestParam(defaultValue = "orderTime") String sortBy){
         return this.orderDetailsService.getAllByOrder(orderId, page, size, sortBy);
     }
 

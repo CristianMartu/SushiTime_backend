@@ -16,6 +16,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Service
@@ -31,16 +32,16 @@ public class OrderDetailsService {
         return this.orderDetailRepository.findById(id).orElseThrow(() -> new NotFoundException(id));
     }
 
-    public OrderDetail save(NewOrderDetailDTO body, UUID orderId){
-        Order order = this.orderService.findById(orderId);
-        Product product = this.productService.findByName(body.productName());
-        OrderDetail orderDetail = new OrderDetail(body.quantity() == null ? 1 : body.quantity(), body.price() == null ? product.getPrice() : body.price(), order, product);
+    public OrderDetail save(NewOrderDetailDTO body, Order order, LocalDateTime time){
+        Product product = this.productService.findByNumber(body.number());
+        double price = product.getPrice() * (body.quantity() == null ? 1 : body.quantity());
+        OrderDetail orderDetail = new OrderDetail(body.quantity() == null ? 1 : body.quantity(), body.price() == null ? price : body.price(), order, product, time);
         return this.orderDetailRepository.save(orderDetail);
     }
 
     public Page<OrderDetail> getAllByOrder(UUID orderId, int pageNumber, int pageSize, String sortBy){
         if (pageSize > 50) pageSize = 50;
-        Pageable pageable = PageRequest.of(pageNumber, pageSize, Sort.by(sortBy));
+        Pageable pageable = PageRequest.of(pageNumber, pageSize, Sort.by(Sort.Direction.DESC, sortBy));
         return this.orderDetailRepository.getAllDetailByOrder(orderId, pageable);
     }
 

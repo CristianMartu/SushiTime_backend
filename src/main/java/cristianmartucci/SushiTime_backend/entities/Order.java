@@ -30,7 +30,7 @@ public class Order {
     @JoinColumn(name = "table_id")
     private cristianmartucci.SushiTime_backend.entities.Table table;
 
-    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<OrderDetail> orderDetails;
 
     public Order(cristianmartucci.SushiTime_backend.entities.Table table) {
