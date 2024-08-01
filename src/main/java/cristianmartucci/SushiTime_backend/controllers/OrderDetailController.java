@@ -47,8 +47,9 @@ public class OrderDetailController {
         if (lastOrder.isPresent()){
             Duration duration = Duration.between(lastOrder.get().getOrderTime(), time);
             // TODO ricordare di impostare il tempo a 10
-            if (duration.toMinutes() < 1){
-                throw new IllegalArgumentException("È necessario attendere 10 minuti tra un ordine e l'altro.");
+            if (duration.toMinutes() < 10){
+                //throw new IllegalArgumentException("È necessario attendere 10 minuti per il prossimo ordine.");
+                throw new IllegalArgumentException("È necessario attendere " + (10 - duration.toMinutes()) +" minuti per il prossimo ordine.");
             }
         }
         if (tableProducts > maxProductPerTable){
