@@ -35,7 +35,7 @@ public class OrderController {
 
     @GetMapping
     @PreAuthorize("hasAnyAuthority('ADMIN', 'STAFF')")
-    public Page<Order> getAll(@RequestParam(defaultValue = "0") int page, @RequestParam(defaultValue = "10") int size, @RequestParam(defaultValue = "state") String sortBy){
+    public Page<Order> getAll(@RequestParam(defaultValue = "0") int page, @RequestParam(defaultValue = "10") int size, @RequestParam(defaultValue = "table.number") String sortBy){
         return this.orderService.getAll(page, size, sortBy);
     }
 

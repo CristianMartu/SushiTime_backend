@@ -57,7 +57,7 @@ public class TableController {
             System.out.println(bindingResult.getAllErrors());
             throw new BadRequestException(bindingResult.getAllErrors());
         }
-        return this.tableService.updateNumber(tableId, body);
+        return this.tableService.updateTable(tableId, body);
     }
 
     @DeleteMapping("/{tableId}")

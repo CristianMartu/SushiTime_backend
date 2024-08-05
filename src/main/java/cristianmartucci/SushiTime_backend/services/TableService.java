@@ -46,7 +46,7 @@ public class TableService {
         return this.tableRepository.save(table);
     }
 
-    public Table updateNumber(UUID id, UpdateTableDTO body){
+    public Table updateTable(UUID id, UpdateTableDTO body){
         Table table = this.findById(id);
         if (body.number() != null){
             if (this.tableRepository.findByNumber(body.number()).isPresent()){
@@ -58,6 +58,8 @@ public class TableService {
         if (body.currentPeople() != null) {
             if (body.currentPeople() > table.getMaxCapacity()){
                 throw new BadRequestException("Il tavolo può avere al massimo " + table.getMaxCapacity() + " persone");
+            } else if ( body.currentPeople() <= 0) {
+                throw new BadRequestException("Il tavolo deve avere almeno una persona");
             }
             table.setCurrentPeople(body.currentPeople());
         }

@@ -36,7 +36,7 @@ public class OrderService {
         } else {
             throw new BadRequestException("Tavolo non disponibile, stato attuale: " + table.getState());
         }
-        Order order = new Order(table);
+        Order order = new Order(table, body.menuPrice());
         return this.orderRepository.save(order);
     }
 
@@ -58,8 +58,10 @@ public class OrderService {
         if (newState.equals(OrderState.PAID) || newState.equals(OrderState.CANCELED)){
             table.setState(TableState.AVAILABLE);
         }else{
-            table.setState(TableState.OCCUPIED);
+            throw new IllegalArgumentException("Impossibile ripristinare l'ordine una volta pagato o cancellato");
+//            table.setState(TableState.OCCUPIED);
         }
+//        order.setTable(null);
         return this.orderRepository.save(order);
     }
 

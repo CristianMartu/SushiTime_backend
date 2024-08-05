@@ -25,6 +25,8 @@ public class Order {
     private LocalDateTime date;
     @Enumerated(value = EnumType.STRING)
     private OrderState state;
+    @Column(name = "menu_price")
+    private double menuPrice;
 
     @ManyToOne
     @JoinColumn(name = "table_id")
@@ -33,9 +35,10 @@ public class Order {
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<OrderDetail> orderDetails;
 
-    public Order(cristianmartucci.SushiTime_backend.entities.Table table) {
+    public Order(cristianmartucci.SushiTime_backend.entities.Table table, double menuPrice) {
         this.table = table;
         this.date = LocalDateTime.now();
         this.state = OrderState.IN_PROGRESS;
+        this.menuPrice = menuPrice;
     }
 }

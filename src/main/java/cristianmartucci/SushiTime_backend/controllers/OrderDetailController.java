@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.*;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -40,15 +41,16 @@ public class OrderDetailController {
         }
         LocalDateTime time = LocalDateTime.now();
         Order order = this.orderService.findById(orderId);
-        int maxProductPerPerson = 10;
+        if (!Objects.equals(order.getState().toString(), "IN_PROGRESS")){
+            throw new BadRequestException("Ordine non disponibile per le ordinazioni, stato attuale: " + order.getState());
+        }
+        int maxProductPerPerson = 6;
         int maxProductPerTable = order.getTable().getCurrentPeople() * maxProductPerPerson;
         int tableProducts = bodyList.stream().mapToInt(NewOrderDetailDTO::quantity).sum();
         Optional<OrderDetail> lastOrder = this.orderDetailsService.getAllByOrder(orderId, 0, 10, "orderTime").stream().findFirst();
         if (lastOrder.isPresent()){
             Duration duration = Duration.between(lastOrder.get().getOrderTime(), time);
-            // TODO ricordare di impostare il tempo a 10
             if (duration.toMinutes() < 10){
-                //throw new IllegalArgumentException("È necessario attendere 10 minuti per il prossimo ordine.");
                 throw new IllegalArgumentException("È necessario attendere " + (10 - duration.toMinutes()) +" minuti per il prossimo ordine.");
             }
         }
