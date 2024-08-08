@@ -2,6 +2,7 @@ package cristianmartucci.SushiTime_backend.entities;
 
 
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import cristianmartucci.SushiTime_backend.enums.TableState;
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -9,6 +10,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
+import java.util.Set;
 import java.util.UUID;
 
 @Entity
@@ -17,6 +19,7 @@ import java.util.UUID;
 @Setter
 @NoArgsConstructor
 @ToString
+@JsonIgnoreProperties(value = {"orders"})
 public class Table {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -28,6 +31,9 @@ public class Table {
     private int currentPeople;
     @Enumerated(value = EnumType.STRING)
     private TableState state;
+
+    @OneToMany(mappedBy = "table", cascade = CascadeType.ALL, orphanRemoval = true)
+    private Set<Order> orders;
 
     public Table(int number, int maxCapacity) {
         this.number = number;

@@ -40,8 +40,11 @@ public class ProductService {
         if (this.productRepository.findByNumber(body.number()).isPresent()){
             throw new BadRequestException("Prodotto numero " + body.number() + " già presente");
         }
+        if (this.productRepository.findByNameAndCategory(body.name().toUpperCase(), body.category().toUpperCase()).isPresent()){
+            throw new BadRequestException("Prodotto con nome " + body.name().toUpperCase() + " e categoria " + body.category().toUpperCase() + " già presente");
+        }
         if (this.productRepository.findByNameAndCategoryOrImage(body.name(), body.category(), body.image()).isPresent()){
-            throw new BadRequestException("Prodotto già presente");
+            throw new BadRequestException("Immagine già presente");
         }
         Product product = new Product(body.name().toUpperCase(), body.description(), body.price(), body.image(), body.number(), this.categoryService.findByName(body.category().toUpperCase()));
         return this.productRepository.save(product);
@@ -61,20 +64,20 @@ public class ProductService {
             }
             product.setNumber(body.number());
         }
-        if (body.category() != null) {
+        if (body.category() != "") {
             Category category = this.categoryService.findByName(body.category().toUpperCase());
             product.setCategory(category);
         }
-        if (body.name() != null){
+        if (body.name() != ""){
             if (this.productRepository.findByNameAndCategory(body.name().toUpperCase(), product.getCategory().getName().toUpperCase()).isPresent()){
                 throw new BadRequestException("Nome già presente nella categoria " + product.getCategory().getName());
             }
             product.setName(body.name().toUpperCase());
         }
-        if (body.description() != null) product.setDescription(body.description());
+        if (body.description() != "") product.setDescription(body.description());
         if (body.price() != null) product.setPrice(body.price());
-        if (body.image() != null) {
-            if (this.productRepository.findByNameAndCategoryOrImage(product.getName(), product.getCategory().getName(), body.image()).isPresent()){
+        if (body.image() != "") {
+            if (this.productRepository.findByImage( body.image()).isPresent()){
                 throw new BadRequestException("Immagine già presente");
             }
             product.setImage(body.image());

@@ -72,6 +72,12 @@ public class OrderDetailController {
         return this.orderDetailsService.getAll(page, size, sortBy);
     }
 
+    @GetMapping("/details/state")
+    @PreAuthorize("hasAnyAuthority('ADMIN', 'STAFF')")
+    public Page<OrderDetail> getAllByState(@RequestParam(defaultValue = "0") int page, @RequestParam(defaultValue = "10") int size, @RequestParam(defaultValue = "orderTime") String sortBy){
+        return this.orderDetailsService.getAllByState(page, size, sortBy);
+    }
+
     @GetMapping("/order/{orderDetailId}")
     @PreAuthorize("hasAnyAuthority('ADMIN', 'STAFF')")
     public OrderDetail getOrderDetail(@PathVariable UUID orderDetailId){

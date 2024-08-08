@@ -36,6 +36,12 @@ public class TableService {
         return this.tableRepository.findAll(pageable);
     }
 
+    public Page<Table> getAllByState(int pageNumber, int pageSize, String sortBy){
+        if (pageSize > 50) pageSize = 50;
+        Pageable pageable = PageRequest.of(pageNumber, pageSize, Sort.by(sortBy));
+        return this.tableRepository.getAllByState(TableState.AVAILABLE ,pageable);
+    }
+
     public Table findById(UUID id) {
         return this.tableRepository.findById(id).orElseThrow(() -> new NotFoundException(id));
     }

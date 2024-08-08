@@ -1,6 +1,7 @@
 package cristianmartucci.SushiTime_backend.repositories;
 
 import cristianmartucci.SushiTime_backend.entities.OrderDetail;
+import cristianmartucci.SushiTime_backend.enums.OrderDetailState;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -13,4 +14,7 @@ import java.util.UUID;
 public interface OrderDetailRepository extends JpaRepository<OrderDetail, UUID> {
     @Query("SELECT o FROM OrderDetail o WHERE o.order.id = :orderId")
     Page<OrderDetail> getAllDetailByOrder(UUID orderId, Pageable pageable);
+
+    @Query("SELECT o FROM OrderDetail o WHERE o.state = :state")
+    Page<OrderDetail> getAllDetailByState(OrderDetailState state, Pageable pageable);
 }

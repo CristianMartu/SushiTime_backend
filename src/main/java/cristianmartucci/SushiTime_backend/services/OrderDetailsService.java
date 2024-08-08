@@ -51,6 +51,12 @@ public class OrderDetailsService {
         return this.orderDetailRepository.findAll(pageable);
     }
 
+    public Page<OrderDetail> getAllByState(int pageNumber, int pageSize, String sortBy){
+        if (pageSize > 50) pageSize = 50;
+        Pageable pageable = PageRequest.of(pageNumber, pageSize, Sort.by(sortBy));
+        return this.orderDetailRepository.getAllDetailByState(OrderDetailState.IN_PROGRESS, pageable);
+    }
+
     public OrderDetail update(UUID id, UpdateOrderDetailDTO body){
         OrderDetail orderDetail = this.findById(id);
         if (body.orderId() != null) orderDetail.setOrder(this.orderService.findById(UUID.fromString(body.orderId())));

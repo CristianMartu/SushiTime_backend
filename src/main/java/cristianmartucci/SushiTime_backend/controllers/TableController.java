@@ -50,6 +50,12 @@ public class TableController {
         return this.tableService.getAll(page, size, sortBy);
     }
 
+    @GetMapping("/state")
+    @PreAuthorize("hasAnyAuthority('ADMIN', 'STAFF')")
+    public Page<Table> getAllByState(@RequestParam(defaultValue = "0") int page, @RequestParam(defaultValue = "10") int size, @RequestParam(defaultValue = "number") String sortBy){
+        return this.tableService.getAllByState(page, size, sortBy);
+    }
+
     @PatchMapping("/{tableId}/number")
     @PreAuthorize("hasAnyAuthority('ADMIN', 'STAFF')")
     public Table updateNumber(@PathVariable UUID tableId, @RequestBody @Validated UpdateTableDTO body, BindingResult bindingResult){

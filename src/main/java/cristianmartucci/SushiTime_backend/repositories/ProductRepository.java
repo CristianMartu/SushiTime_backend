@@ -20,6 +20,8 @@ public interface ProductRepository extends JpaRepository<Product, UUID> {
 
     Optional<Product> findByName(String name);
 
+    Optional<Product> findByImage(String image);
+
     Optional<Product> findByNumber(int number);
 
     @Query("SELECT p FROM Product p WHERE p.category.name = :category")

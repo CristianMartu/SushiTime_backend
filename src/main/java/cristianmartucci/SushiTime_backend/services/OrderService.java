@@ -2,6 +2,7 @@ package cristianmartucci.SushiTime_backend.services;
 
 import cristianmartucci.SushiTime_backend.entities.Order;
 import cristianmartucci.SushiTime_backend.entities.Table;
+import cristianmartucci.SushiTime_backend.enums.OrderDetailState;
 import cristianmartucci.SushiTime_backend.enums.OrderState;
 import cristianmartucci.SushiTime_backend.enums.TableState;
 import cristianmartucci.SushiTime_backend.exceptions.BadRequestException;
@@ -42,8 +43,14 @@ public class OrderService {
 
     public Page<Order> getAll(int pageNumber, int pageSize, String sortBy){
         if (pageSize > 50) pageSize = 50;
-        Pageable pageable = PageRequest.of(pageNumber, pageSize, Sort.by(sortBy));
+        Pageable pageable = PageRequest.of(pageNumber, pageSize, Sort.by(Sort.Direction.DESC, sortBy));
         return this.orderRepository.findAll(pageable);
+    }
+
+    public Page<Order> getAllByState(int pageNumber, int pageSize, String sortBy){
+        if (pageSize > 50) pageSize = 50;
+        Pageable pageable = PageRequest.of(pageNumber, pageSize, Sort.by(sortBy));
+        return this.orderRepository.getAllOrderByState(OrderState.IN_PROGRESS, pageable);
     }
 
     public Order getOrder(UUID id){
@@ -55,13 +62,16 @@ public class OrderService {
         OrderState newState = stringToState(body.state());
         order.setState(newState);
         Table table = order.getTable();
-        if (newState.equals(OrderState.PAID) || newState.equals(OrderState.CANCELED)){
+        if (newState.equals(OrderState.PAID)){
             table.setState(TableState.AVAILABLE);
-        }else{
+            order.getOrderDetails().forEach(orderDetail -> orderDetail.setState(OrderDetailState.SERVED));
+        } else if (newState.equals(OrderState.CANCELED)) {
+            table.setState(TableState.AVAILABLE);
+            order.getOrderDetails().forEach(orderDetail -> orderDetail.setState(OrderDetailState.CANCELED));
+        } else{
             throw new IllegalArgumentException("Impossibile ripristinare l'ordine una volta pagato o cancellato");
 //            table.setState(TableState.OCCUPIED);
         }
-//        order.setTable(null);
         return this.orderRepository.save(order);
     }
 
