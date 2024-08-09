@@ -4,6 +4,7 @@ import cristianmartucci.SushiTime_backend.entities.User;
 import cristianmartucci.SushiTime_backend.exceptions.BadRequestException;
 import cristianmartucci.SushiTime_backend.payloads.RoleResponseDTO;
 import cristianmartucci.SushiTime_backend.payloads.users.NewUserDTO;
+import cristianmartucci.SushiTime_backend.payloads.users.NewUserResponseDTO;
 import cristianmartucci.SushiTime_backend.payloads.users.UpdateUserDTO;
 import cristianmartucci.SushiTime_backend.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +24,17 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    @PostMapping
+    @PreAuthorize("hasAuthority('ADMIN')")
+    @ResponseStatus(HttpStatus.CREATED)
+    public NewUserResponseDTO save(@RequestBody @Validated NewUserDTO body, BindingResult bindingResult){
+        if (bindingResult.hasErrors()) {
+            System.out.println(bindingResult.getAllErrors());
+            throw new BadRequestException(bindingResult.getAllErrors());
+        }
+        return new NewUserResponseDTO(this.userService.save(body).getId());
+    }
+
     @GetMapping
     @PreAuthorize("hasAnyAuthority('ADMIN', 'STAFF')")
     public Page<User> getAll(@RequestParam(defaultValue = "0") int page, @RequestParam(defaultValue = "10") int size, @RequestParam(defaultValue = "id") String sortBy){
@@ -36,13 +48,18 @@ public class UserController {
             System.out.println(bindingResult.getAllErrors());
             throw new BadRequestException(bindingResult.getAllErrors());
         }
-        return this.userService.changeRuolo(body , userId);
+        return this.userService.changeRole(body , userId);
     }
 
     @GetMapping("/{userId}")
     @PreAuthorize("hasAnyAuthority('ADMIN', 'STAFF')")
     public User getUser(@PathVariable UUID userId){
         return this.userService.findById(userId);
+    }
+
+    @GetMapping("/profile")
+    public User getUser(@AuthenticationPrincipal User user){
+        return this.userService.findById(user.getId());
     }
 
     @PutMapping("/profile")
@@ -54,9 +71,10 @@ public class UserController {
         return this.userService.updateUser(user, body);
     }
 
-    @DeleteMapping("/profile")
+    @DeleteMapping("/{userId}")
+    @PreAuthorize("hasAuthority('ADMIN')")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void delete(@AuthenticationPrincipal User user){
-        this.userService.delete(user);
+    public void delete(@PathVariable UUID userId){
+        this.userService.delete(userId);
     }
 }
