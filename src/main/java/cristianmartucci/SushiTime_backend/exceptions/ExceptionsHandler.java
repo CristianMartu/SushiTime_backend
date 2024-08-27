@@ -6,6 +6,7 @@ import org.springframework.security.authorization.AuthorizationDeniedException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
+import org.springframework.web.multipart.support.MissingServletRequestPartException;
 
 import java.time.LocalDateTime;
 import java.util.stream.Collectors;
@@ -46,6 +47,13 @@ public class ExceptionsHandler {
     @ResponseStatus(HttpStatus.FORBIDDEN)
     public ErrorsDTO handleAuthorizationDeniedException(AuthorizationDeniedException ex) {
         return new ErrorsDTO("Non hai accesso alla risorsa!", LocalDateTime.now());
+    }
+
+    @ExceptionHandler(MissingServletRequestPartException.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    public ErrorsDTO handleMissingServletRequestPartException(MissingServletRequestPartException ex) {
+        String message = "Immagine obbligatoria";
+        return new ErrorsDTO(message, LocalDateTime.now());
     }
 
     @ExceptionHandler(Exception.class)

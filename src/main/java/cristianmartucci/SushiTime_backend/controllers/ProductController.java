@@ -1,5 +1,7 @@
 package cristianmartucci.SushiTime_backend.controllers;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import cristianmartucci.SushiTime_backend.entities.Product;
 import cristianmartucci.SushiTime_backend.exceptions.BadRequestException;
 import cristianmartucci.SushiTime_backend.payloads.product.*;
@@ -7,11 +9,16 @@ import cristianmartucci.SushiTime_backend.services.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.DataBinder;
+import org.springframework.validation.Validator;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.IOException;
 import java.util.UUID;
 
 @RestController
@@ -19,16 +26,31 @@ import java.util.UUID;
 public class ProductController {
     @Autowired
     private ProductService productService;
+    @Autowired
+    private Validator validator;
 
-    @PostMapping
+    @PostMapping(consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     @PreAuthorize("hasAnyAuthority('ADMIN', 'STAFF')")
     @ResponseStatus(HttpStatus.CREATED)
-    public NewProductResponseDTO save(@RequestBody @Validated NewProductDTO body, BindingResult bindingResult){
-        if (bindingResult.hasErrors()){
+    public NewProductResponseDTO save(
+            @RequestPart("product") String productJson,
+            @RequestPart("image") MultipartFile image) throws IOException {
+        ObjectMapper objectMapper = new ObjectMapper();
+        NewProductDTO productDto;
+        try {
+            productDto = objectMapper.readValue(productJson, NewProductDTO.class);
+        } catch (JsonProcessingException e) {
+            throw new BadRequestException("Errore nella deserializzazione del JSON");
+        }
+        DataBinder binder = new DataBinder(productDto);
+        binder.setValidator(validator);
+        binder.validate();
+        BindingResult bindingResult = binder.getBindingResult();
+        if (bindingResult.hasErrors()) {
             System.out.println(bindingResult.getAllErrors());
             throw new BadRequestException(bindingResult.getAllErrors());
         }
-        return new NewProductResponseDTO(this.productService.save(body).getId());
+        return new NewProductResponseDTO(this.productService.save(productDto, this.productService.uploadImage(image)).getId());
     }
 
     @GetMapping
@@ -43,15 +65,24 @@ public class ProductController {
         return this.productService.findById(productId);
     }
 
-
-    @PutMapping("/{productId}")
+    @PutMapping(value = "/{productId}", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     @PreAuthorize("hasAnyAuthority('ADMIN', 'STAFF')")
-    public Product update(@PathVariable UUID productId, @RequestBody @Validated UpdateProductDTO body, BindingResult bindingResult){
-        if (bindingResult.hasErrors()){
-            System.out.println(bindingResult.getAllErrors());
-            throw new BadRequestException(bindingResult.getAllErrors());
+    public Product update(
+            @PathVariable UUID productId,
+            @RequestPart("product") String productJson,
+            @RequestPart(value = "image", required = false) MultipartFile image) throws IOException {
+        ObjectMapper objectMapper = new ObjectMapper();
+        UpdateProductDTO productDto;
+        try {
+            productDto = objectMapper.readValue(productJson, UpdateProductDTO.class);
+        } catch (JsonProcessingException e) {
+            throw new BadRequestException("Errore nella deserializzazione del JSON");
         }
-        return this.productService.update(productId, body);
+        String imageUrl = null;
+        if (image != null){
+            imageUrl = this.productService.uploadImage(image);
+        }
+        return this.productService.update(productId, productDto, imageUrl);
     }
 
     @DeleteMapping("/{productId}")

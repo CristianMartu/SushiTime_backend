@@ -12,8 +12,8 @@ public record NewProductDTO(
         Double price,
         @NotNull(message = "Numero obbligatorio")
         Integer number,
-        @NotEmpty(message = "Image obbligatorio")
-        String image,
         @NotEmpty(message = "Nome categoria obbligatorio")
-        String category) {
+        String category,
+        String image
+        ) {
 }
