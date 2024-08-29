@@ -274,7 +274,7 @@
       "name": "MISO SOUP",
       "description": "Zuppa di miso",
       "price": 4,
-      "image": "image141",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724249044/image141_dopo28.png",
       "number": 141,
       "category": {
         "name": "ENTRÉES"
@@ -284,7 +284,7 @@
       "name": "WANTON SOUP",
       "description": "Zuppa di miso con wanton fritti",
       "price": 4,
-      "image": "image142",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724249044/image142_lcvui5.png",
       "number": 142,
       "category": {
         "name": "ENTRÉES"
@@ -294,7 +294,7 @@
       "name": "PANINO GUABAO",
       "description": "Guabao cotto al vapore",
       "price": 2,
-      "image": "image144",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724249045/image144_pepze6.png",
       "number": 144,
       "category": {
         "name": "ENTRÉES"
@@ -304,7 +304,7 @@
       "name": "MANTOU FRITTO",
       "description": "Panino giapponese fritto (2 pezzi)",
       "price": 2,
-      "image": "image143",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724249045/image143_pnugsk.png",
       "number": 143,
       "category": {
         "name": "ENTRÉES"
@@ -314,7 +314,7 @@
       "name": "SPICY TORI SALAD",
       "description": "Insalata mista con pollo fritto in crosta di mandorle e paprika, salsa per insalata",
       "price": 3,
-      "image": "image145",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724249045/image145_yqh3cp.png",
       "number": 145,
       "category": {
         "name": "ENTRÉES"
@@ -324,7 +324,7 @@
       "name": "KAISEN SALAD",
       "description": "Insalata di mare",
       "price": 3,
-      "image": "image146",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724249045/image146_ji50kl.png",
       "number": 146,
       "category": {
         "name": "ENTRÉES"
@@ -334,7 +334,7 @@
       "name": "EBI SALAD",
       "description": "Insalata mista con gamberoni, salsa per insalata",
       "price": 3,
-      "image": "image147",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724249045/image147_ceargv.png",
       "number": 147,
       "category": {
         "name": "ENTRÉES"
@@ -344,7 +344,7 @@
       "name": "GOMA WAKAME",
       "description": "Insalata di alghe giapponesi leggermente piccanti",
       "price": 3,
-      "image": "image149",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724249048/image149_vgce2z.png",
       "number": 149,
       "category": {
         "name": "ENTRÉES"
@@ -354,7 +354,7 @@
       "name": "EDAMAME",
       "description": "Fagioli di soia giapponesi bolliti",
       "price": 3,
-      "image": "image150",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724249048/image150_zs4nw1.png",
       "number": 150,
       "category": {
         "name": "ENTRÉES"
@@ -364,7 +364,7 @@
       "name": "RISO BIANCO",
       "description": "Riso bianco con sesamo",
       "price": 2,
-      "image": "image148",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724249047/image148_mrbh1a.png",
       "number": 148,
       "category": {
         "name": "ENTRÉES"
@@ -374,7 +374,7 @@
       "name": "ZUPPA AGROPICCANTE",
       "description": "Pollo, tofu, carote, bambù, funghi neri, uova",
       "price": 4,
-      "image": "image301",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724249048/image301_ey5icd.png",
       "number": 301,
       "category": {
         "name": "ENTRÉES"
@@ -384,7 +384,7 @@
       "name": "CREAM BAO",
       "description": "Pane alla crema (2 pezzi)",
       "price": 2,
-      "image": "image410",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724249048/image410_j12kst.png",
       "number": 410,
       "category": {
         "name": "ENTRÉES"
@@ -394,7 +394,7 @@
       "name": "POKE SHAKE",
       "description": "Riso, salmone*, edamame, avocado, goma wakame, pasta kataifi, salsa poke",
       "price": 5,
-      "image": "image317",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724249636/image317_nirjbg.png",
       "number": 317,
       "category": {
         "name": "POKE"
@@ -404,7 +404,7 @@
       "name": "POKE SEA FRESH",
       "description": "Riso, salmone*, tonno, avocado, goma wakame, mango, fili di patate fritte, salsa matsu",
       "price": 5,
-      "image": "image318",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724249636/image318_a2fzlp.png",
       "number": 318,
       "category": {
         "name": "POKE"
@@ -414,7 +414,7 @@
       "name": "POKE MAGURO",
       "description": "Riso, tonno*, ananas, avocado, chips di cipolla fritta, salsa teriyaki",
       "price": 5,
-      "image": "image316",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724249636/image316_vavg9k.png",
       "number": 316,
       "category": {
         "name": "POKE"
@@ -424,7 +424,7 @@
       "name": "SPICY TORI",
       "description": "Straccetti di pollo* fritto in crosta di mandorle e paprika",
       "price": 4,
-      "image": "image207",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724250095/image207_ocdk5k.png",
       "number": 207,
       "category": {
         "name": "FRITTI"
@@ -434,7 +434,7 @@
       "name": "PATATE FRITTE",
       "description": "Patate fritte*",
       "price": 2,
-      "image": "image210",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724250095/image210_tmxw1c.png",
       "number": 210,
       "category": {
         "name": "FRITTI"
@@ -444,7 +444,7 @@
       "name": "CALAMARI FRITTI",
       "description": "Anelli di calamaro* fritti",
       "price": 3,
-      "image": "image216",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724250097/image216_qeqasp.png",
       "number": 216,
       "category": {
         "name": "FRITTI"
@@ -454,7 +454,7 @@
       "name": "TEMPURA EBI",
       "description": "Gamberoni* in tempura fritti",
       "price": 3,
-      "image": "image212",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724250096/image212_mxk419.png",
       "number": 212,
       "category": {
         "name": "FRITTI"
@@ -464,7 +464,7 @@
       "name": "FIORI DI ZUCCA",
       "description": "Fiori di zucca in tempura",
       "price": 2,
-      "image": "image213",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724250096/image213_ppuzhy.png",
       "number": 213,
       "category": {
         "name": "FRITTI"
@@ -474,7 +474,7 @@
       "name": "SAMURAI STICK",
       "description": "Involtini* di gamberi ed edamame",
       "price": 3,
-      "image": "image278",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724250098/image278_ikhkzp.png",
       "number": 278,
       "category": {
         "name": "FRITTI"
@@ -484,7 +484,7 @@
       "name": "TEMPURA KAKIAGE",
       "description": "Strisce di verdura fritte",
       "price": 3,
-      "image": "image302",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724250099/image302_tcs7cw.png",
       "number": 302,
       "category": {
         "name": "FRITTI"
@@ -494,7 +494,7 @@
       "name": "NUGGETS DI POLLO",
       "description": "Nuggets* di pollo fritti",
       "price": 3,
-      "image": "image98",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724250095/image98_tvb3tj.png",
       "number": 98,
       "category": {
         "name": "FRITTI"
@@ -504,7 +504,7 @@
       "name": "HARUMAKI TORI",
       "description": "Involtini* giapponesi di pollo e verdure leggermente piccanti",
       "price": 4,
-      "image": "image215",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724250877/image215_xhffuc.png",
       "number": 215,
       "category": {
         "name": "FRITTI"
@@ -514,7 +514,7 @@
       "name": "HARUMAKI EBI",
       "description": "Involtini* giapponesi di gamberi",
       "price": 4,
-      "image": "image214",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724250876/image214_fz2hjh.png",
       "number": 214,
       "category": {
         "name": "FRITTI"
@@ -524,7 +524,7 @@
       "name": "JAPAN KOROKKE",
       "description": "Crocchette* giapponesi di patate e verdure, salsa teriyaki",
       "price": 2,
-      "image": "image206",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724250876/image206_j35p0w.png",
       "number": 206,
       "category": {
         "name": "FRITTI"
@@ -534,7 +534,7 @@
       "name": "TOAST DI GAMBERI",
       "description": "Pollo macinato, gamberi, sesamo",
       "price": 4,
-      "image": "image279",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724250877/image279_po73bn.png",
       "number": 279,
       "category": {
         "name": "FRITTI"
@@ -544,7 +544,7 @@
       "name": "HARUMAKI YASAI",
       "description": "Involtini di verdure",
       "price": 4,
-      "image": "image303",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724250878/image303_zptnsl.png",
       "number": 303,
       "category": {
         "name": "FRITTI"
@@ -554,7 +554,7 @@
       "name": "TAKOYAKI",
       "description": "Polpette di polpo fritte",
       "price": 3,
-      "image": "image305",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724250879/image305_oueuh7.png",
       "number": 305,
       "category": {
         "name": "FRITTI"
@@ -564,7 +564,7 @@
       "name": "CONG YOU BING",
       "description": "Focaccia cinese ai cipollotti",
       "price": 2,
-      "image": "image277",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724250876/image277_jyk3bl.png",
       "number": 277,
       "category": {
         "name": "FRITTI"
@@ -574,7 +574,7 @@
       "name": "CONG YOU BING CON STUFATO DI PANCETTA",
       "description": "Cong you bing con stufato di pancetta di maiale e méicài (verdura secca cinese)",
       "price": 4,
-      "image": "image304",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724250879/image304_upe3ss.png",
       "number": 304,
       "category": {
         "name": "FRITTI"
@@ -584,7 +584,7 @@
       "name": "URAMAKI FUJI",
       "description": "Salmone*, avocado, philadelphia, guacamole, sesamo",
       "price": 4,
-      "image": "image36",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724251304/image36_lqjkxf.png",
       "number": 36,
       "category": {
         "name": "URAMAKI"
@@ -594,7 +594,7 @@
       "name": "URAMAKI SPICY MAGURO",
       "description": "Tonno*, cetriolo, tobiko*, spicy cream, chips di tempura, erba cipollina",
       "price": 4,
-      "image": "image39",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724251302/image39_tysejc.png",
       "number": 39,
       "category": {
         "name": "URAMAKI"
@@ -604,7 +604,7 @@
       "name": "URAMAKI TUNA",
       "description": "Tonno condito con sesamo, cetrioli a julienne, salsa teriyaki",
       "price": 4,
-      "image": "image40",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724251302/image40_rsxnoc.png",
       "number": 40,
       "category": {
         "name": "URAMAKI"
@@ -614,7 +614,7 @@
       "name": "URAMAKI EXOTIC",
       "description": "Surimi di pesce, avocado, mango, guacamole, chips",
       "price": 4,
-      "image": "image41",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724251302/image41_zdftd7.png",
       "number": 41,
       "category": {
         "name": "URAMAKI"
@@ -624,7 +624,7 @@
       "name": "URAMAKI EBITEM",
       "description": "Gamberone* in tempura, maionese, salsa teriyaki, sesamo",
       "price": 4,
-      "image": "image43",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724251301/image43_uoek0u.png",
       "number": 43,
       "category": {
         "name": "URAMAKI"
@@ -634,7 +634,7 @@
       "name": "URAMAKI TUNA BASIL",
       "description": "Insalata, tonno condito, uova* di pesce volante, basilico, sesamo, salsa teriyaki",
       "price": 4,
-      "image": "image42",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724251302/image42_dcxncy.png",
       "number": 42,
       "category": {
         "name": "URAMAKI"
@@ -644,7 +644,7 @@
       "name": "URAMAKI CANYON",
       "description": "Gamberone* in tempura, avocado, julienne di patate fritte, salsa teriyaki, sesamo",
       "price": 4,
-      "image": "image49",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724251301/image49_ueuait.png",
       "number": 49,
       "category": {
         "name": "URAMAKI"
@@ -654,7 +654,7 @@
       "name": "URAMAKI ARCOBALENO",
       "description": "Salmone*, avocado, mix di pesce*, guacamole, mango",
       "price": 4,
-      "image": "image58",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724251301/image58_rxilkm.png",
       "number": 58,
       "category": {
         "name": "URAMAKI"
@@ -664,7 +664,7 @@
       "name": "URAMAKI SPICY SHAKE",
       "description": "Salmone*, cetriolo, tobiko*, spicy cream, chips di tempura, erba cipollina",
       "price": 4,
-      "image": "image38",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724251733/image38_jpibpr.png",
       "number": 38,
       "category": {
         "name": "URAMAKI"
@@ -674,7 +674,7 @@
       "name": "URAMAKI PHILADELPHIA",
       "description": "Salmone*, avocado, philadelphia, sesamo, chips di nori croccante",
       "price": 4,
-      "image": "image44",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724251732/image44_jrtzxi.png",
       "number": 44,
       "category": {
         "name": "URAMAKI"
@@ -684,7 +684,7 @@
       "name": "URAMAKI TORI",
       "description": "Pollo* croccante, insalata, salsa sushiko flambé",
       "price": 4,
-      "image": "image45",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724251731/image45_mptulc.png",
       "number": 45,
       "category": {
         "name": "URAMAKI"
@@ -694,7 +694,7 @@
       "name": "URAMAKI MIURA",
       "description": "Salmone cotto condito, philadelphia, salsa teriyaki, chips di nori croccante",
       "price": 4,
-      "image": "image46",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724251730/image46_kc1z8v.png",
       "number": 46,
       "category": {
         "name": "URAMAKI"
@@ -704,7 +704,7 @@
       "name": "URAMAKI YASAI",
       "description": "Verdure di stagione, philadelphia",
       "price": 4,
-      "image": "image37",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724251734/image37_lptwsq.png",
       "number": 37,
       "category": {
         "name": "URAMAKI"
@@ -714,7 +714,7 @@
       "name": "URAMAKI SHAKE FLAMBÉ",
       "description": "Salmone*, cetriolo, salsa evergreen flambé, chips di tempura",
       "price": 4,
-      "image": "image47",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724251730/image47_xx5ebf.png",
       "number": 47,
       "category": {
         "name": "URAMAKI"
@@ -724,7 +724,7 @@
       "name": "URAMAKI MEDITERRANEO",
       "description": "Pomodoro secco, avocado, philadelphia, sesamo, miso, salsa spicy cream, chips di tempura",
       "price": 4,
-      "image": "image48",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724251730/image48_c6y3h9.png",
       "number": 48,
       "category": {
         "name": "URAMAKI"
@@ -734,7 +734,7 @@
       "name": "URAMAKI CHEESE",
       "description": "Salmone* alla piastra, cheese, salsa passion flambé, salsa teriyaki, scaglie di mandorle croccanti",
       "price": 4,
-      "image": "image50",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724251729/image50_ykdfy4.png",
       "number": 50,
       "category": {
         "name": "URAMAKI"
@@ -744,7 +744,7 @@
       "name": "URAMAKI GHIBLI",
       "description": "Gambero* in tempura, avocado, riso soffiato, salmone* condito, erba cipollina, miso",
       "price": 4,
-      "image": "image57",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724251729/image57_dwpd3r.png",
       "number": 57,
       "category": {
         "name": "URAMAKI"
@@ -754,7 +754,7 @@
       "name": "URAMAKI SALMON PLUS",
       "description": "Salmone* alla piastra, salmone* flambé, salsa sushiko",
       "price": 4,
-      "image": "image67",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724252241/image67_lhofsb.png",
       "number": 67,
       "category": {
         "name": "URAMAKI"
@@ -764,7 +764,7 @@
       "name": "URAMAKI DRAGON NEW",
       "description": "Gambero*, avocado, philadelphia, salmone*, salsa passion flambé, sesamo, erba cipollina",
       "price": 4,
-      "image": "image60",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724252243/image60_omfcur.png",
       "number": 60,
       "category": {
         "name": "URAMAKI"
@@ -774,7 +774,7 @@
       "name": "URAMAKI BLACK SHAKE",
       "description": "Salmone*, avocado, philadelphia, riso venere",
       "price": 4,
-      "image": "image68",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724252240/image68_lj4lnc.png",
       "number": 68,
       "category": {
         "name": "URAMAKI"
@@ -784,7 +784,7 @@
       "name": "URAMAKI BLACK DRAGON",
       "description": "Gambero* in tempura, avocado, suzuki* flambé, salsa evergreen, chips di rucola, riso venere",
       "price": 4,
-      "image": "image308",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724252239/image308_lvjjtg.png",
       "number": 308,
       "category": {
         "name": "URAMAKI"
@@ -794,7 +794,7 @@
       "name": "URAMAKI EBITEM PLUS",
       "description": "Gambero* in tempura, asparago, cream cheese, mandorle, erba cipollina",
       "price": 4,
-      "image": "image99",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724252240/image99_nznynd.png",
       "number": 99,
       "category": {
         "name": "URAMAKI"
@@ -804,7 +804,7 @@
       "name": "URAMAKI BLACK EBITEM",
       "description": "Gambero* in tempura, chips di rucola, salsa teriyaki",
       "price": 4,
-      "image": "image63",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724252243/image63_t0zucf.png",
       "number": 63,
       "category": {
         "name": "URAMAKI"
@@ -814,7 +814,7 @@
       "name": "URAMAKI BLACK MANDORLA FLAMBÉ",
       "description": "Salmone*, avocado, salsa passion flambé, mandorle croccanti",
       "price": 4,
-      "image": "image307",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724252239/image307_xljfya.png",
       "number": 307,
       "category": {
         "name": "URAMAKI"
@@ -824,7 +824,7 @@
       "name": "URAMAKI DRAGON",
       "description": "Gambero* in tempura, avocado, guacamole, chips, salsa teriyaki",
       "price": 4,
-      "image": "image59",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724252244/image59_ybvmcx.png",
       "number": 59,
       "category": {
         "name": "URAMAKI"
@@ -834,7 +834,7 @@
       "name": "URAMAKI SALMON SPECIAL",
       "description": "Avocado, philadelphia, salmone* speziato, nori in polvere, salsa teriyaki",
       "price": 4,
-      "image": "image100",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724252240/image100_fztoqn.png",
       "number": 100,
       "category": {
         "name": "URAMAKI"
@@ -844,7 +844,7 @@
       "name": "URAMAKI MANGO SHAKE",
       "description": "Mango, avocado, salmone*, salsa mango fresh",
       "price": 4,
-      "image": "image71",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724253255/image71_i8y1xj.png",
       "number": 71,
       "category": {
         "name": "URAMAKI"
@@ -854,7 +854,7 @@
       "name": "URAMAKI SPICY TORI FLAMBÉ",
       "description": "Pollo* croccante, insalata, salsa spicy cream, salsa teriyaki, sesamo",
       "price": 4,
-      "image": "image287",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724253258/image287_vwldhq.png",
       "number": 287,
       "category": {
         "name": "URAMAKI"
@@ -864,7 +864,7 @@
       "name": "URAMAKI NEW SALMON FLAMBÉ",
       "description": "Avocado, philadelphia, salmone* flambé, maio flambé, salsa special mandorla",
       "price": 4,
-      "image": "image250",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724253256/image250_ahixpg.png",
       "number": 250,
       "category": {
         "name": "URAMAKI"
@@ -874,7 +874,7 @@
       "name": "URA ROLL PHILADELPHIA FLAMBÉ",
       "description": "Salmone*, avocado, philadelphia flambè, salsa teriyaki",
       "price": 4,
-      "image": "image311",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724253260/image311_rzt1t0.png",
       "number": 311,
       "category": {
         "name": "URA ROLL"
@@ -884,7 +884,7 @@
       "name": "URA ROLL SPICY TORI FLAMBÉ",
       "description": "Pollo* fritto in crosta di mandorle e paprika, insalata, philadelphia flambè, salsa sweet chily",
       "price": 4,
-      "image": "image312",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724253261/image312_ysucu2.png",
       "number": 312,
       "category": {
         "name": "URA ROLL"
@@ -894,7 +894,7 @@
       "name": "URAMAKI CRAB POMODORO NORI",
       "description": "Crab* condito con gambero*, maio giapponese, maio, pomodoro speziato, lime",
       "price": 4,
-      "image": "image251",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724253256/image251_rcs0fu.png",
       "number": 251,
       "category": {
         "name": "URAMAKI"
@@ -904,7 +904,7 @@
       "name": "URA ROLL CANYON FLAMBÉ",
       "description": "Gamberone* in tempura, avocado, philadelphia flambè, chips di cipolla, salsa teriyaki, riso venere",
       "price": 4,
-      "image": "image310",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724253259/image310_vwcclj.png",
       "number": 310,
       "category": {
         "name": "URA ROLL"
@@ -914,7 +914,7 @@
       "name": "URAMAKI FRUIT",
       "description": "Insalata, gambero* in tempura, maio vegana, mango, salsa al mango",
       "price": 4,
-      "image": "image61",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724253255/image61_s2ccqd.png",
       "number": 61,
       "category": {
         "name": "URAMAKI"
@@ -924,7 +924,7 @@
       "name": "URAMAKI ROLL CRAB",
       "description": "Crab* condito con gambero*, maio giapponese, uova* di pesce volante, salsa teriyaki",
       "price": 4,
-      "image": "image252",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724253257/image252_asmnx4.png",
       "number": 252,
       "category": {
         "name": "URAMAKI"
@@ -934,7 +934,7 @@
       "name": "SHAKEFURAI (4pz)",
       "description": "Salmone*, philadelphia, salsa teriyaki, sesamo, erba cipollina",
       "price": 4,
-      "image": "image89",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724254418/image89_vsjy68.png",
       "number": 89,
       "category": {
         "name": "HOSOMAKI"
@@ -944,7 +944,7 @@
       "name": "HOT ROLL (4pz)",
       "description": "Tartare di salmone*, philadelphia, surimi*, salsa teriyaki, sesamo, erba cipollina",
       "price": 4,
-      "image": "image88",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724254417/image88_arxnjf.png",
       "number": 88,
       "category": {
         "name": "HOSOMAKI"
@@ -954,7 +954,7 @@
       "name": "MANGOMAKI (4pz)",
       "description": "Salmone*, philadelphia, mango e salsa al mango",
       "price": 4,
-      "image": "image91",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724254418/image91_zwh6if.png",
       "number": 91,
       "category": {
         "name": "HOSOMAKI"
@@ -964,7 +964,7 @@
       "name": "FRAGOLAMAKI (4pz)",
       "description": "Salmone*, philadelphia, fragola e topping alla fragola",
       "price": 4,
-      "image": "image90",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724254418/image90_s5azgu.png",
       "number": 90,
       "category": {
         "name": "HOSOMAKI"
@@ -974,7 +974,7 @@
       "name": "HOSOMAKI TUNA CETRIOLO (3pz)",
       "description": "Tonno cotto*, cetriolo",
       "price": 2,
-      "image": "image257",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724254431/image257_rssn0h.png",
       "number": 257,
       "category": {
         "name": "HOSOMAKI"
@@ -984,7 +984,7 @@
       "name": "HOSOMAKI SHAKE (3pz)",
       "description": "Salmone*",
       "price": 2,
-      "image": "image84",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724254431/image84_bt8iub.png",
       "number": 84,
       "category": {
         "name": "HOSOMAKI"
@@ -994,7 +994,7 @@
       "name": "HOSOMAKI AVOCADO (3pz)",
       "description": "Avocado",
       "price": 2,
-      "image": "image83",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724254430/image83_gas5y6.png",
       "number": 83,
       "category": {
         "name": "HOSOMAKI"
@@ -1004,7 +1004,7 @@
       "name": "HOSOMAKI MAGURO (3pz)",
       "description": "Tonno*",
       "price": 2,
-      "image": "image82",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724254430/image82_f1i5yr.png",
       "number": 82,
       "category": {
         "name": "HOSOMAKI"
@@ -1014,7 +1014,7 @@
       "name": "HOSOMAKI MIURA (3pz)",
       "description": "Salmone* alla piastra",
       "price": 3,
-      "image": "image85",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724254431/image85_hbgheg.png",
       "number": 85,
       "category": {
         "name": "HOSOMAKI"
@@ -1024,7 +1024,7 @@
       "name": "FUTOMAKI MIURA (5pz)",
       "description": "Salmone alla piastra*, avocado, salsa bernese, salsa teriyaki",
       "price": 4,
-      "image": "image87",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724254431/image87_owdw3o.png",
       "number": 87,
       "category": {
         "name": "HOSOMAKI"
@@ -1034,7 +1034,7 @@
       "name": "HOSOMAKI EBITEM NEGI (3pz)",
       "description": "Gambero* in tempura, salsa teriyaki",
       "price": 4,
-      "image": "image258",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724254431/image258_lmauuw.png",
       "number": 258,
       "category": {
         "name": "HOSOMAKI"
@@ -1044,7 +1044,7 @@
       "name": "GUABAO SPICY TORI",
       "description": "Ripieno di pollo* fritto in crosta di mandorle e paprika, insalata, cetrioli, pomodoro, spicy maio, sesamo",
       "price": 3,
-      "image": "image194",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724255296/image194_lalrww.png",
       "number": 194,
       "category": {
         "name": "GUABAO"
@@ -1054,7 +1054,7 @@
       "name": "DONBURI GONGBAO EBI",
       "description": "Riso ricoperto da gamberi* con verdure, arachidi, salsa leggermente piccante",
       "price": 5,
-      "image": "image274",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724255295/image274_hrwyfj.png",
       "number": 274,
       "category": {
         "name": "DONBURI"
@@ -1064,7 +1064,7 @@
       "name": "GUABAO PORK",
       "description": "Ripieno di stufato di pancetta di maiale, méicài (verdura secca cinese), sesamo",
       "price": 3,
-      "image": "image193",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724255296/image193_hvpeoe.png",
       "number": 193,
       "category": {
         "name": "GUABAO"
@@ -1074,7 +1074,7 @@
       "name": "GUABAO SHAKE DELIGHT",
       "description": "Ripieno di salmone* fritto, insalata, pomodoro, cetrioli, salsa bernese, sesamo",
       "price": 3,
-      "image": "image192",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724255296/image192_gm5xi5.png",
       "number": 192,
       "category": {
         "name": "GUABAO"
@@ -1084,7 +1084,7 @@
       "name": "DONBURI MA PO PORK SPICY",
       "description": "Riso ricoperto da pancetta di maiale tritata, peperoni, cipolla, cipollotti, salsa leggermente piccante",
       "price": 5,
-      "image": "image276",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724255295/image276_bjkupt.png",
       "number": 276,
       "category": {
         "name": "DONBURI"
@@ -1094,7 +1094,7 @@
       "name": "DONBURI SUSHIKO SPECIAL",
       "description": "Riso ricoperto da manzo, pollo, gamberi, calamari, peperoni, bambù, carote",
       "price": 5,
-      "image": "image275",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724255295/image275_ofiumj.png",
       "number": 275,
       "category": {
         "name": "DONBURI"
@@ -1104,7 +1104,7 @@
       "name": "ONIGIRI SHAKE (1pz)",
       "description": "Salmone*, philadelphia, sesamo",
       "price": 2,
-      "image": "image118",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724255298/image118_fy8kpk.png",
       "number": 118,
       "category": {
         "name": "ONIGIRI"
@@ -1114,7 +1114,7 @@
       "name": "ONIGIRI MIURA (1pz)",
       "description": "Salmone alla piastra*, philadelphia, spicy maio, sesamo",
       "price": 2,
-      "image": "image119",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724255296/image119_ql0ezs.png",
       "number": 119,
       "category": {
         "name": "ONIGIRI"
@@ -1124,7 +1124,7 @@
       "name": "ONIGIRI TUNA (1pz)",
       "description": "Tonno in olio d’oliva, philadelphia, spicy maio",
       "price": 2,
-      "image": "image120",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724255296/image120_ls7ivt.png",
       "number": 120,
       "category": {
         "name": "ONIGIRI"
@@ -1134,7 +1134,7 @@
       "name": "TARTARE SUZUKI",
       "description": "Tartare di branzino*, salsa tropicale, guacamole, nori croccante, chips",
       "price": 4,
-      "image": "image259",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724256031/image259_hmpg2w.png",
       "number": 259,
       "category": {
         "name": "TARTARE"
@@ -1144,7 +1144,7 @@
       "name": "TARTARE MAGURO",
       "description": "Tartare di tonno*, salsa ponzu dressing, guacamole, arancia, chips",
       "price": 4,
-      "image": "image127",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724256031/image127_qfgmxc.png",
       "number": 127,
       "category": {
         "name": "TARTARE"
@@ -1154,7 +1154,7 @@
       "name": "SASHIMI SHAKE (5pz)",
       "description": "Salmone*",
       "price": 4,
-      "image": "image101",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724256032/image101_hukcgc.png",
       "number": 101,
       "category": {
         "name": "SASHIMI"
@@ -1164,7 +1164,7 @@
       "name": "TARTARE SHAKE",
       "description": "Tartare di salmone*, salsa ponzu dressing, guacamole, mandorle croccanti, chips",
       "price": 4,
-      "image": "image126",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724256032/image126_au6caw.png",
       "number": 126,
       "category": {
         "name": "TARTARE"
@@ -1174,7 +1174,7 @@
       "name": "SASHIMI SHIROMI (5pz)",
       "description": "Branzino*",
       "price": 4,
-      "image": "image104",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724256032/image104_kt54hf.png",
       "number": 104,
       "category": {
         "name": "SASHIMI"
@@ -1184,7 +1184,7 @@
       "name": "SASHIMI MAGURO (5pz)",
       "description": "Tonno*",
       "price": 4,
-      "image": "image102",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724256032/image102_iuvwy8.png",
       "number": 102,
       "category": {
         "name": "SASHIMI"
@@ -1194,7 +1194,7 @@
       "name": "GUNKAN TUNA",
       "description": "Bocconcino di riso avvolto da alga nori, condito con tonno cotto speziato, sesamo",
       "price": 3,
-      "image": "image260",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724256314/image260_nfx3py.png",
       "number": 260,
       "category": {
         "name": "GUNKAN"
@@ -1204,7 +1204,7 @@
       "name": "GUNKAN CALIFORNIA",
       "description": "Bocconcino di riso avvolto da alga nori condito con surimi di pesce e gambero",
       "price": 3,
-      "image": "image262",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724256314/image262_klnfia.png",
       "number": 262,
       "category": {
         "name": "GUNKAN"
@@ -1214,7 +1214,7 @@
       "name": "GUNKAN SAKE UP",
       "description": "Bocconcino di riso avvolto da alga nori, salmone* e salsa sushiko",
       "price": 3,
-      "image": "image261",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724256313/image261_zkwtuv.png",
       "number": 261,
       "category": {
         "name": "GUNKAN"
@@ -1224,7 +1224,7 @@
       "name": "GUNKAN MAGURO SPICY",
       "description": "Bocconcino di riso avvolto da alga nori, tonno* rosso, salsa spicy cream, erba cipollina",
       "price": 3,
-      "image": "image263",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724256313/image263_oxa6yq.png",
       "number": 263,
       "category": {
         "name": "GUNKAN"
@@ -1234,7 +1234,7 @@
       "name": "BIGNÈ PHILADELPHIA",
       "description": "Bocconcino di riso avvolto da salmone*, topping di philadelphia, sesamo, salsa teriyaki",
       "price": 3,
-      "image": "image264",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724256313/image264_bkd8iv.png",
       "number": 264,
       "category": {
         "name": "GUNKAN"
@@ -1244,7 +1244,7 @@
       "name": "BIGNÈ TUNA FLAMBÉ",
       "description": "Bocconcino di riso avvolto da salmone*, topping di tonno cotto flambato, salsa teriyaki",
       "price": 3,
-      "image": "image265",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724256312/image265_w4wnpb.png",
       "number": 265,
       "category": {
         "name": "GUNKAN"
@@ -1254,7 +1254,7 @@
       "name": "TOGA (3pz)",
       "description": "Ravioli* al tè matcha con verdure e bacche di goji cotti a vapore",
       "price": 3,
-      "image": "image197",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724256918/image197_uye84x.png",
       "number": 197,
       "category": {
         "name": "RAVIOLI"
@@ -1264,7 +1264,7 @@
       "name": "TAGOJI (3pz)",
       "description": "Ravioli* di gamberi (presenza di carne) cotti a vapore",
       "price": 2,
-      "image": "image196",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724256919/image196_zyqv3n.png",
       "number": 196,
       "category": {
         "name": "RAVIOLI"
@@ -1274,7 +1274,7 @@
       "name": "SHAOMAI EBI (3pz)",
       "description": "Ravioli* di gamberi (presenza di carne) cotti a vapore",
       "price": 3,
-      "image": "image201",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724256915/image201_g3kfpa.png",
       "number": 201,
       "category": {
         "name": "RAVIOLI"
@@ -1284,7 +1284,7 @@
       "name": "EBI GYOZA (3pz)",
       "description": "Ravioli* di gamberi (presenza di carne) e verdure cotti a vapore",
       "price": 2,
-      "image": "image198",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724256918/image198_o8pmcw.png",
       "number": 198,
       "category": {
         "name": "RAVIOLI"
@@ -1294,7 +1294,7 @@
       "name": "SHAOMAI SPECIAL (3pz)",
       "description": "Ravioli* di gamberi (presenza di carne) cotti a vapore",
       "price": 3,
-      "image": "image273",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724256914/image273_brqpxj.png",
       "number": 273,
       "category": {
         "name": "RAVIOLI"
@@ -1304,7 +1304,7 @@
       "name": "NIKU GYOZA (3pz)",
       "description": "Ravioli* di carne cotti al vapore",
       "price": 3,
-      "image": "image199",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724256917/image199_szu137.png",
       "number": 199,
       "category": {
         "name": "RAVIOLI"
@@ -1314,7 +1314,7 @@
       "name": "NIKU YAKI GYOZA (3pz)",
       "description": "Ravioli di carne cotti alla piastra",
       "price": 3,
-      "image": "image200",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724256915/image200_q6srsr.png",
       "number": 200,
       "category": {
         "name": "RAVIOLI"
@@ -1324,7 +1324,7 @@
       "name": "RAMEN PORK",
       "description": "Ramen con stufato di pancetta di maiale, méicài (verdura secca cinese), germogli di soia, cipollotti",
       "price": 4,
-      "image": "image315",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724256914/image315_z0qnvz.png",
       "number": 315,
       "category": {
         "name": "RAMEN"
@@ -1334,7 +1334,7 @@
       "name": "RAMEN BEEF",
       "description": "Ramen con manzo, cavolo cappuccio, germogli di soia, cipollotti",
       "price": 4,
-      "image": "image314",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724256914/image314_xqahsl.png",
       "number": 314,
       "category": {
         "name": "RAMEN"
@@ -1344,7 +1344,7 @@
       "name": "SHAKE MIX",
       "description": "3 hosomaki, 4 uramaki, 3 nigiri",
       "price": 8,
-      "image": "image131",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724257268/image131_lnrs2d.png",
       "number": 131,
       "category": {
         "name": "SUSHI MISTI"
@@ -1354,7 +1354,7 @@
       "name": "SUSALOVERS",
       "description": "3 hosomaki, 4 uramaki, 2 nigiri, 5 sashimi",
       "price": 12,
-      "image": "image134",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724257268/image134_f4zi8k.png",
       "number": 134,
       "category": {
         "name": "SUSHI MISTI"
@@ -1364,7 +1364,7 @@
       "name": "NIGIRI OMAKASE",
       "description": "3 nigiri special",
       "price": 7,
-      "image": "image266",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724257263/image266_qclymw.png",
       "number": 266,
       "category": {
         "name": "SUSHI MISTI"
@@ -1374,7 +1374,7 @@
       "name": "HOSOMAKI MISTO",
       "description": "9 hosomaki",
       "price": 6,
-      "image": "image135",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724257267/image135_i84gux.png",
       "number": 135,
       "category": {
         "name": "SUSHI MISTI"
@@ -1384,7 +1384,7 @@
       "name": "SASHIMI MISTO",
       "description": "9 pezzi di sashimi",
       "price": 10,
-      "image": "image136",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724257265/image136_f9ezpk.png",
       "number": 136,
       "category": {
         "name": "SUSHI MISTI"
@@ -1394,7 +1394,7 @@
       "name": "SUSHI OMAKASE",
       "description": "3 hosomaki, 2 uramaki, 3 nigiri",
       "price": 8,
-      "image": "image267",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724257263/image267_qrtl1z.png",
       "number": 267,
       "category": {
         "name": "SUSHI MISTI"
@@ -1404,7 +1404,7 @@
       "name": "URAMAKI MISTO",
       "description": "8 uramaki",
       "price": 8,
-      "image": "image137",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724257264/image137_mm40j5.png",
       "number": 137,
       "category": {
         "name": "SUSHI MISTI"
@@ -1414,7 +1414,7 @@
       "name": "CARPACCIO NEW STYLE",
       "description": "Misto di pesce omakase, salsa special, condimento omakase",
       "price": 4,
-      "image": "image284",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724257820/image284_naalhn.png",
       "number": 284,
       "category": {
         "name": "CARPACCIO"
@@ -1424,7 +1424,7 @@
       "name": "CARPACCIO SHAKE",
       "description": "Fette di salmone* condito con salsa tradizionale, frutta di stagione, spezie aromatiche",
       "price": 4,
-      "image": "image285",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724257819/image285_jolvyq.png",
       "number": 285,
       "category": {
         "name": "CARPACCIO"
@@ -1434,7 +1434,7 @@
       "name": "DUTOU EBI",
       "description": "Tempura di gamberi*, philadelphia, salsa teriyaki, pasta kataifi, salmone scottato",
       "price": null,
-      "image": "image320",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724257817/image320_m40w8k.png",
       "number": 320,
       "category": {
         "name": "DUTOU"
@@ -1444,7 +1444,7 @@
       "name": "CARPACCIO SUZUKI",
       "description": "Fette di branzino* condito con salsa tropicale, olio verde, frutta di stagione, nori croccante",
       "price": 4,
-      "image": "image286",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724257818/image286_sddvt7.png",
       "number": 286,
       "category": {
         "name": "CARPACCIO"
@@ -1454,7 +1454,7 @@
       "name": "DUTOU SHAKE & VERDURE",
       "description": "Cetrioli, philadelphia, salmone e sesamo",
       "price": 4,
-      "image": "image319",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724257817/image319_o7qmls.png",
       "number": 319,
       "category": {
         "name": "DUTOU"
@@ -1464,7 +1464,7 @@
       "name": "DUTOU SHAKE",
       "description": "Tempura di salmone, philadelphia, salsa teriyaki, pasta kataifi, salmone scottato",
       "price": 4,
-      "image": "image321",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724257816/image321_kmksvu.png",
       "number": 321,
       "category": {
         "name": "DUTOU"
@@ -1474,7 +1474,7 @@
       "name": "YAKI UDON YASAI",
       "description": "Noodles con verdure",
       "price": 3,
-      "image": "image161",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724700972/image161_vvxvz0.png",
       "number": 161,
       "category": {
         "name": "PRIMI PIATTI"
@@ -1484,7 +1484,7 @@
       "name": "YAKI UDON TORI",
       "description": "Noodles con pollo* e verdure",
       "price": 3,
-      "image": "image162",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724700972/image162_sdrbla.png",
       "number": 162,
       "category": {
         "name": "PRIMI PIATTI"
@@ -1494,7 +1494,7 @@
       "name": "YAKI UDON GYU",
       "description": "Noodles con manzo* e verdure leggermente piccante",
       "price": 3,
-      "image": "image163",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724700972/image163_bmcbv1.png",
       "number": 163,
       "category": {
         "name": "PRIMI PIATTI"
@@ -1504,7 +1504,7 @@
       "name": "YAKI UDON KAISEN",
       "description": "Noodles con misto mare*",
       "price": 3,
-      "image": "image164",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724700973/image164_o1gsrd.png",
       "number": 164,
       "category": {
         "name": "PRIMI PIATTI"
@@ -1514,7 +1514,7 @@
       "name": "YAKI SOBA KAISEN",
       "description": "Spaghetti di grano saraceno con misto mare* e uova",
       "price": 3,
-      "image": "image165",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724700976/image165_tsovma.png",
       "number": 165,
       "category": {
         "name": "PRIMI PIATTI"
@@ -1524,7 +1524,7 @@
       "name": "YAKI SOBA TORI",
       "description": "Spaghetti di grano saraceno con pollo*, verdure e uova",
       "price": 3,
-      "image": "image166",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724700977/image166_p42htx.png",
       "number": 166,
       "category": {
         "name": "PRIMI PIATTI"
@@ -1534,7 +1534,7 @@
       "name": "YAKI SOBA YASAI",
       "description": "Spaghetti di grano saraceno con verdure e uova",
       "price": 3,
-      "image": "image167",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724700978/image167_s1f8vn.png",
       "number": 167,
       "category": {
         "name": "PRIMI PIATTI"
@@ -1544,7 +1544,7 @@
       "name": "RISO VENERE CON VERDURE",
       "description": "Riso venere con verdure e uova",
       "price": 4,
-      "image": "image168",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724700978/image168_xxbzcv.png",
       "number": 168,
       "category": {
         "name": "PRIMI PIATTI"
@@ -1554,7 +1554,7 @@
       "name": "RISO VENERE CON MISTO MARE",
       "description": "Riso venere con misto mare* e uova",
       "price": 4,
-      "image": "image169",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724700972/image169_bf1z1p.png",
       "number": 169,
       "category": {
         "name": "PRIMI PIATTI"
@@ -1564,7 +1564,7 @@
       "name": "SPAGHETTI DI SOIA GYU",
       "description": "Con manzo*, verdure e uova leggermente piccanti",
       "price": 3,
-      "image": "image176",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724262418/image176_u059zq.png",
       "number": 176,
       "category": {
         "name": "PRIMI PIATTI"
@@ -1574,7 +1574,7 @@
       "name": "SPAGHETTI DI SOIA TORI",
       "description": "Con pollo*, verdure e uova",
       "price": 3,
-      "image": "image177",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724262418/image177_u6ruyc.png",
       "number": 177,
       "category": {
         "name": "PRIMI PIATTI"
@@ -1584,7 +1584,7 @@
       "name": "SPAGHETTI DI SOIA YASAI",
       "description": "Con verdure e uova",
       "price": 3,
-      "image": "image178",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724262418/image178_gq3caj.png",
       "number": 178,
       "category": {
         "name": "PRIMI PIATTI"
@@ -1594,7 +1594,7 @@
       "name": "SPAGHETTI DI SOIA KAISEN",
       "description": "Con misto mare* e uova",
       "price": 3,
-      "image": "image179",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724262418/image179_g3yekq.png",
       "number": 179,
       "category": {
         "name": "PRIMI PIATTI"
@@ -1604,7 +1604,7 @@
       "name": "SPAGHETTI DI RISO YASAI",
       "description": "Con verdure e uova",
       "price": 3,
-      "image": "image180",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724262418/image180_getyzn.png",
       "number": 180,
       "category": {
         "name": "PRIMI PIATTI"
@@ -1614,7 +1614,7 @@
       "name": "SPAGHETTI DI RISO TORI",
       "description": "Con pollo*, verdure e uova",
       "price": 3,
-      "image": "image181",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724262418/image181_gh0w2u.png",
       "number": 181,
       "category": {
         "name": "PRIMI PIATTI"
@@ -1624,7 +1624,7 @@
       "name": "SPAGHETTI DI RISO GYU",
       "description": "Con manzo*, verdure e uova leggermente piccanti",
       "price": 3,
-      "image": "image182",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724262419/image182_uemduh.png",
       "number": 182,
       "category": {
         "name": "PRIMI PIATTI"
@@ -1634,7 +1634,7 @@
       "name": "SPAGHETTI DI RISO KAISEN",
       "description": "Con misto mare*, verdure e uova",
       "price": 3,
-      "image": "image183",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724262419/image183_v5okpo.png",
       "number": 183,
       "category": {
         "name": "PRIMI PIATTI"
@@ -1644,7 +1644,7 @@
       "name": "RAMEN YASAI",
       "description": "Ramen saltati con verdure e uova",
       "price": 4,
-      "image": "image325",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724262419/image325_er1v03.png",
       "number": 325,
       "category": {
         "name": "PRIMI PIATTI"
@@ -1654,7 +1654,7 @@
       "name": "RAMEN TORI",
       "description": "Ramen saltati con pollo*, verdure e uova",
       "price": 4,
-      "image": "image326",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724262419/image326_dd9htp.png",
       "number": 326,
       "category": {
         "name": "PRIMI PIATTI"
@@ -1664,7 +1664,7 @@
       "name": "RAMEN KAISEN",
       "description": "Ramen saltati con misto mare*, verdure e uova",
       "price": 4,
-      "image": "image327",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724262419/image327_m7hpa7.png",
       "number": 327,
       "category": {
         "name": "PRIMI PIATTI"
@@ -1674,7 +1674,7 @@
       "name": "YAKI MESHI YASAI",
       "description": "Riso con verdure e uova",
       "price": 3,
-      "image": "image170",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724262417/image170_aigfcx.png",
       "number": 170,
       "category": {
         "name": "PRIMI PIATTI"
@@ -1684,7 +1684,7 @@
       "name": "YAKI MESHI TORI",
       "description": "Riso con pollo*, verdure e uova",
       "price": 3,
-      "image": "image171",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724262418/image171_i8j9yy.png",
       "number": 171,
       "category": {
         "name": "PRIMI PIATTI"
@@ -1694,7 +1694,7 @@
       "name": "YAKI MESHI GYU",
       "description": "Riso con manzo*, verdure e uova leggermente piccante",
       "price": 3,
-      "image": "image172",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724262418/image172_k3k4k1.png",
       "number": 172,
       "category": {
         "name": "PRIMI PIATTI"
@@ -1704,7 +1704,7 @@
       "name": "YAKI MESHI KAISEN",
       "description": "Riso con misto mare* e uova",
       "price": 3,
-      "image": "image173",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724262418/image173_brrq3f.png",
       "number": 173,
       "category": {
         "name": "PRIMI PIATTI"
@@ -1714,7 +1714,7 @@
       "name": "YAKI MESHI CURRY TORI",
       "description": "Riso con pollo*, verdure, salsa al curry e uova",
       "price": 3,
-      "image": "image174",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724262418/image174_xjlltj.png",
       "number": 174,
       "category": {
         "name": "PRIMI PIATTI"
@@ -1724,7 +1724,7 @@
       "name": "RISO ALLA CANTONESE",
       "description": "Riso con prosciutto cotto, piselli, speck cinese, uova",
       "price": 3,
-      "image": "image272",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724262419/image272_ei1zwx.png",
       "number": 272,
       "category": {
         "name": "PRIMI PIATTI"
@@ -1734,7 +1734,7 @@
       "name": "SHIROMI YAKI",
       "description": "Pesce bianco* alla piastra, cipollotti",
       "price": 4,
-      "image": "image221",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724263292/image221_xaxnvx.png",
       "number": 221,
       "category": {
         "name": "SECONDI PIATTI"
@@ -1744,7 +1744,7 @@
       "name": "YAKITORI",
       "description": "Spiedini di pollo* alla piastra con salsa teriyaki",
       "price": 4,
-      "image": "image222",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724263292/image222_qeq7tn.png",
       "number": 222,
       "category": {
         "name": "SECONDI PIATTI"
@@ -1754,7 +1754,7 @@
       "name": "EBI KUSHI",
       "description": "Spiedini di gamberi* alla piastra con salsa teriyaki",
       "price": 4,
-      "image": "image223",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724263292/image223_ctgl5n.png",
       "number": 223,
       "category": {
         "name": "SECONDI PIATTI"
@@ -1764,7 +1764,7 @@
       "name": "EBI YAKI",
       "description": "Gamberoni* alla piastra",
       "price": 4,
-      "image": "image224",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724263293/image224_c1vz2l.png",
       "number": 224,
       "category": {
         "name": "SECONDI PIATTI"
@@ -1774,7 +1774,7 @@
       "name": "SHAKE TERIYAKI",
       "description": "Salmone* alla piastra",
       "price": 4,
-      "image": "image225",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724263293/image225_nchjwq.png",
       "number": 225,
       "category": {
         "name": "SECONDI PIATTI"
@@ -1784,7 +1784,7 @@
       "name": "ORANGE EBI",
       "description": "Gamberi* in pastella, ananas, salsa all’arancia, pistacchi",
       "price": 4,
-      "image": "image236",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724263293/image236_mkhdrl.png",
       "number": 236,
       "category": {
         "name": "SECONDI PIATTI"
@@ -1794,7 +1794,7 @@
       "name": "LEMON TORI",
       "description": "Pollo* al limone",
       "price": 4,
-      "image": "image281",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724263297/image281_iufzhh.png",
       "number": 281,
       "category": {
         "name": "SECONDI PIATTI"
@@ -1804,7 +1804,7 @@
       "name": "GONGBAO EBI",
       "description": "Gamberi* con verdure, arachidi, salsa leggermente piccante",
       "price": 4,
-      "image": "image237",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724263293/image237_zi9zf3.png",
       "number": 237,
       "category": {
         "name": "SECONDI PIATTI"
@@ -1814,7 +1814,7 @@
       "name": "VERDURE MISTE",
       "description": "Verdure miste saltate al wok",
       "price": 4,
-      "image": "image233",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724263293/image233_ylzrcv.png",
       "number": 233,
       "category": {
         "name": "SECONDI PIATTI"
@@ -1824,7 +1824,7 @@
       "name": "CURRY TORI",
       "description": "Wok di pollo* con salsa al curry",
       "price": 4,
-      "image": "image230",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724263293/image230_kamgvn.png",
       "number": 230,
       "category": {
         "name": "SECONDI PIATTI"
@@ -1834,7 +1834,7 @@
       "name": "MANZO CON CIPOLLA E PEPE NERO",
       "description": "Manzo*, cipolla di tropea, pepe nero, cipollotti",
       "price": 4,
-      "image": "image240",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724263293/image240_xze3tc.png",
       "number": 240,
       "category": {
         "name": "SECONDI PIATTI"
@@ -1844,7 +1844,7 @@
       "name": "MEAT WOK",
       "description": "Wok di pollo*, manzo*, funghi, cavolo, salsa piccante",
       "price": 4,
-      "image": "image323",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724263297/image323_pqzns0.png",
       "number": 323,
       "category": {
         "name": "SECONDI PIATTI"
@@ -1854,7 +1854,7 @@
       "name": "FISH WOK",
       "description": "Wok di gamberi*, seppie*, surimi*, funghi, cavolo, salsa piccante",
       "price": 4,
-      "image": "image324",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724263297/image324_xc6whm.png",
       "number": 324,
       "category": {
         "name": "SECONDI PIATTI"
@@ -1864,7 +1864,7 @@
       "name": "MAIALE IN AGRODOLCE",
       "description": "Maiale in pastella fritto, mela, ananas, peperoni, salsa agrodolce",
       "price": 4,
-      "image": "image238",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724264036/image238_hgowmn.png",
       "number": 238,
       "category": {
         "name": "SECONDI PIATTI"
@@ -1874,7 +1874,7 @@
       "name": "GAMBERETTI CON BAMBÙ E FUNGHI",
       "description": "Gamberetti*, bambù e funghi",
       "price": 4,
-      "image": "image242",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724264038/image242_mvpp0f.png",
       "number": 242,
       "category": {
         "name": "SECONDI PIATTI"
@@ -1884,7 +1884,7 @@
       "name": "POLLO ALLE MANDORLE",
       "description": "Pollo*, mandorle caramellate",
       "price": 4,
-      "image": "image232",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724264035/image232_eykmoe.png",
       "number": 232,
       "category": {
         "name": "SECONDI PIATTI"
@@ -1894,7 +1894,7 @@
       "name": "GAMBERETTI AL WOK SALE E PEPE",
       "description": "Gamberi*, aglio e cipollotti",
       "price": 4,
-      "image": "image227",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724264034/image227_cnm3yj.png",
       "number": 227,
       "category": {
         "name": "SECONDI PIATTI"
@@ -1904,7 +1904,7 @@
       "name": "POLLO CON BAMBÙ E FUNGHI",
       "description": "Pollo, bambù, funghi",
       "price": 4,
-      "image": "image245",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724264039/image245_pqakan.png",
       "number": 245,
       "category": {
         "name": "SECONDI PIATTI"
@@ -1914,7 +1914,7 @@
       "name": "MANZO PICCANTE",
       "description": "Manzo, peperoni, cipolla, salsa piccante",
       "price": 4,
-      "image": "image241",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724264038/image241_xywa6m.png",
       "number": 241,
       "category": {
         "name": "SECONDI PIATTI"
@@ -1924,7 +1924,7 @@
       "name": "POLLO CON PATATE",
       "description": "Pollo, patate",
       "price": 4,
-      "image": "image244",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724264039/image244_p3x55w.png",
       "number": 244,
       "category": {
         "name": "SECONDI PIATTI"
@@ -1934,7 +1934,7 @@
       "name": "POLLO CON VERDURE",
       "description": "Pollo* saltato con verdure miste",
       "price": 4,
-      "image": "image234",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724264035/image234_p7eftd.png",
       "number": 234,
       "category": {
         "name": "SECONDI PIATTI"
@@ -1944,7 +1944,7 @@
       "name": "MANZO CON BAMBÙ E FUNGHI",
       "description": "Manzo, bambù e funghi",
       "price": 4,
-      "image": "image283",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724264039/image283_gqinae.png",
       "number": 283,
       "category": {
         "name": "SECONDI PIATTI"
@@ -1954,7 +1954,7 @@
       "name": "MANZO CON VERDURE",
       "description": "Manzo* saltato con verdure miste",
       "price": 4,
-      "image": "image235",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724264036/image235_dvjkfp.png",
       "number": 235,
       "category": {
         "name": "SECONDI PIATTI"
@@ -1964,7 +1964,7 @@
       "name": "POLLO ALL’ARANCIA",
       "description": "Pollo, salsa agli agrumi, arancia a spicchi",
       "price": 4,
-      "image": "image231",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724264035/image231_suatyq.png",
       "number": 231,
       "category": {
         "name": "SECONDI PIATTI"
@@ -1974,7 +1974,7 @@
       "name": "GONGBAO TORI",
       "description": "Wok di pollo* (presenza di arachidi) con salsa gongbao leggermente piccante",
       "price": 4,
-      "image": "image239",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724264038/image239_pvweua.png",
       "number": 239,
       "category": {
         "name": "SECONDI PIATTI"
@@ -1984,7 +1984,7 @@
       "name": "CALAMARI E GAMBERI SALE E PEPE",
       "description": "Calamaro*, gamberi*, peperoni, zenzero e cipollotti",
       "price": 4,
-      "image": "image229",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724264035/image229_pmquur.png",
       "number": 229,
       "category": {
         "name": "SECONDI PIATTI"
@@ -1994,7 +1994,7 @@
       "name": "GAMBERONI AL WOK PEPE E SHICHIMI",
       "description": "Gamberoni*, porri, aglio e cipollotti",
       "price": 4,
-      "image": "image228",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724264035/image228_rpxkne.png",
       "number": 228,
       "category": {
         "name": "SECONDI PIATTI"
@@ -2004,7 +2004,7 @@
       "name": "GYU YAKI",
       "description": "Tagliata di manzo* con salsa alla soia e burro",
       "price": 4,
-      "image": "image226",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724264034/image226_ks62dw.png",
       "number": 226,
       "category": {
         "name": "SECONDI PIATTI"
@@ -2014,7 +2014,7 @@
       "name": "SUSHI CHOCO STRAWBERRY",
       "description": "Sushi ripieno di nutella® e fragole",
       "price": 5,
-      "image": "image650",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724265733/image650_v0w5et.png",
       "number": 650,
       "category": {
         "name": "DOLCI"
@@ -2024,7 +2024,7 @@
       "name": "SUSHI CHOCO BANANA",
       "description": "Sushi ripieno di nutella® e banane",
       "price": 5,
-      "image": "image651",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724265733/image651_hyo7hq.png",
       "number": 651,
       "category": {
         "name": "DOLCI"
@@ -2034,7 +2034,7 @@
       "name": "ANANAS FRESCO",
       "description": "",
       "price": 3.50,
-      "image": "image652",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724265734/image652_wrfkaq.png",
       "number": 652,
       "category": {
         "name": "DOLCI"
@@ -2044,7 +2044,7 @@
       "name": "SEMIFREDDO AL TORRONCINO",
       "description": "",
       "price": 4,
-      "image": "image653",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724265733/image653_hhvyqb.png",
       "number": 653,
       "category": {
         "name": "DOLCI"
@@ -2054,7 +2054,7 @@
       "name": "TARTUFO NERO",
       "description": "",
       "price": 4,
-      "image": "image654",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724701924/image654_wxh3rt.png",
       "number": 654,
       "category": {
         "name": "DOLCI"
@@ -2064,7 +2064,7 @@
       "name": "TARTUFO BIANCO",
       "description": "",
       "price": 4,
-      "image": "image655",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724701924/image655_wy0bum.png",
       "number": 655,
       "category": {
         "name": "DOLCI"
@@ -2074,7 +2074,7 @@
       "name": "SOUFFLÉ AL CIOCCOLATO",
       "description": "Con gelato al tè verde",
       "price": 5.50,
-      "image": "image656",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724265733/image656_xp5lop.png",
       "number": 656,
       "category": {
         "name": "DOLCI"
@@ -2084,7 +2084,7 @@
       "name": "GELATO DI COCCO RIPIENO",
       "description": "",
       "price": 4.50,
-      "image": "image657",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724265733/image657_mcsfuw.png",
       "number": 657,
       "category": {
         "name": "DOLCI"
@@ -2094,7 +2094,7 @@
       "name": "SORBETTO LIMONE",
       "description": "",
       "price": 3.20,
-      "image": "image663",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724265734/image663_kx6igk.png",
       "number": 663,
       "category": {
         "name": "DOLCI"
@@ -2104,7 +2104,7 @@
       "name": "GELATO DI LIMONE RIPIENO",
       "description": "",
       "price": 4.50,
-      "image": "image658",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724265734/image658_uxix5e.png",
       "number": 658,
       "category": {
         "name": "DOLCI"
@@ -2114,7 +2114,7 @@
       "name": "GELATO",
       "description": "The verde - Crema - Limone - Caffè",
       "price": 3.50,
-      "image": "image659",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724265734/image659_uvxexj.png",
       "number": 659,
       "category": {
         "name": "DOLCI"
@@ -2124,7 +2124,7 @@
       "name": "DOLCE DI COCCO",
       "description": "Dolce di cocco fritto",
       "price": 4.50,
-      "image": "image660",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724265733/image660_rs9jrn.png",
       "number": 660,
       "category": {
         "name": "DOLCI"
@@ -2134,7 +2134,7 @@
       "name": "GELATO FRITTO",
       "description": "Gelato fritto",
       "price": 4.50,
-      "image": "image661",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724265733/image661_nhywgs.png",
       "number": 661,
       "category": {
         "name": "DOLCI"
@@ -2144,7 +2144,7 @@
       "name": "WAFFLE",
       "description": "Waffle* con gelato",
       "price": 5.00,
-      "image": "image662",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724265734/image662_gvca2c.png",
       "number": 662,
       "category": {
         "name": "DOLCI"
@@ -2154,7 +2154,7 @@
       "name": "SORBETTO CAFFÈ",
       "description": "",
       "price": 3.20,
-      "image": "image664",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724265734/image664_w1isyl.png",
       "number": 664,
       "category": {
         "name": "DOLCI"
@@ -2164,7 +2164,7 @@
       "name": "MOCHI",
       "description": "Palline di gelato avvolte da una pastella di riso. Due gusti a scelta tra: FRAGOLA - MANGO - PANNA - TÈ VERDE - COCCO",
       "price": 4.50,
-      "image": "image666",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724265734/image666_v9sxa2.png",
       "number": 666,
       "category": {
         "name": "DOLCI"
@@ -2174,7 +2174,7 @@
       "name": "MAKI SENSATION",
       "description": "Mousse ai gusti di mandorla, cocco e cioccolato",
       "price": 5.00,
-      "image": "image668",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724265734/image668_ccohej.png",
       "number": 668,
       "category": {
         "name": "DOLCI"
@@ -2184,7 +2184,7 @@
       "name": "BLACK FOREST ROLLS",
       "description": "Soffice biscuit al cioccolato bagnato con sciroppo di amarena ripieno di crema chantilly alla vaniglia e decorato con lamponi e cioccolato",
       "price": 5.00,
-      "image": "image671",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724265735/image671_zat765.png",
       "number": 671,
       "category": {
         "name": "DOLCI"
@@ -2194,7 +2194,7 @@
       "name": "SWEET DIM SUM TRIS",
       "description": "Delicati ravioli dolci con farina di riso ripieni di caffè croccante, pistacchio croccante e gianduia croccante. Serviti con salsa calda al cioccolato",
       "price": 5.50,
-      "image": "image667",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724265734/image667_fwhvg8.png",
       "number": 667,
       "category": {
         "name": "DOLCI"
@@ -2204,7 +2204,7 @@
       "name": "NIGIRI TROPICAL",
       "description": "Mousse al risolatte ricoperti da lime, zenzero ed esotico",
       "price": 5.00,
-      "image": "image669",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724265735/image669_koasou.png",
       "number": 669,
       "category": {
         "name": "DOLCI"
@@ -2214,7 +2214,7 @@
       "name": "TEMAKI FRUIT PARTY",
       "description": "Crepes ripiene di mousse ai lamponi, limone e pistacchio",
       "price": 5,
-      "image": "image670",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724265735/image670_gw41yo.png",
       "number": 670,
       "category": {
         "name": "DOLCI"
@@ -2224,7 +2224,7 @@
       "name": "CHEESE CAKE FANTASY",
       "description": "Croccante frolla al cioccolato con tris di cheesecake al the verde e amarena, al passion fruit e fragolina di bosco",
       "price": 5,
-      "image": "image672",
+      "image": "https://res.cloudinary.com/dgqc5ptli/image/upload/v1724265735/image672_u0fo1e.png",
       "number": 672,
       "category": {
         "name": "DOLCI"
